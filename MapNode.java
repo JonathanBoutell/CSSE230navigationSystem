@@ -9,7 +9,7 @@ public class MapNode {
 	boolean hasFirstAid;
 	ArrayList<MapEdge> edges;
 
-	MapNode(String name, double longitude, double latitude, double drawX, double drawY, boolean firstAid) {
+	public MapNode(String name, double longitude, double latitude, double drawX, double drawY, boolean firstAid) {
 		this.name = name;
 		this.longitude = longitude;
 		this.latitude = latitude;
@@ -19,7 +19,7 @@ public class MapNode {
 		this.edges = new ArrayList<>();
 	}
 
-	MapNode() {
+	public MapNode() {
 		this.name = null;
 		this.longitude = 0;
 		this.latitude = 0;
@@ -52,8 +52,8 @@ public class MapNode {
 	public void setFirstAid(boolean hasFirstAid) {
 		this.hasFirstAid = hasFirstAid;
 	}
-	
-	public void setEdges(ArrayList<MapEdge> edges){
+
+	public void setEdges(ArrayList<MapEdge> edges) {
 		this.edges = edges;
 	}
 
