@@ -90,8 +90,8 @@ public class PathFinder {
 	}
 	
 	public ArrayList<MapNode> getAllNodes(){
-		//TODO do we want to use a different data structure here?
-		//since each node stores all edges pointing away from it, we should just need to return the nodes
+		//since each node returns all the edges going away from it, we should just need to pass back
+		//the nodes and be able to draw all the edges as well
 		ArrayList<MapNode> temp = new ArrayList<>();
 		for(String k : map.keySet()) {
 			temp.add(map.get(k));
