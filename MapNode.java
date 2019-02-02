@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
-public class MapNode implements Comparable<MapNode>{
+import com.sun.javafx.geom.Shape;
+import com.sun.prism.Graphics;
+import com.sun.prism.paint.Color;
+
+public class MapNode implements Comparable<MapNode>, Drawable{
 	String name;
 	double longitude;
 	double latitude;
@@ -19,9 +23,24 @@ public class MapNode implements Comparable<MapNode>{
 		this.hasFirstAid = firstAid;
 		this.edges = new ArrayList<>();
 	}
+	
+	public void draw(Graphics g) {
+		//TODO finish this method
+	}
+	
+	@Override
+	public Shape getShape() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Color getColor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	public MapNode() {
-		//comment
 		this.name = null;
 		this.longitude = 0;
 		this.latitude = 0;
@@ -120,5 +139,4 @@ public class MapNode implements Comparable<MapNode>{
 	public int compareTo(MapNode o) {
 		return (int) ((int) this.findHeuristicDistance() - o.findHeuristicDistance());
 	}
-
 }

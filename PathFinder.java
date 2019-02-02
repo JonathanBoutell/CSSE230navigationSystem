@@ -83,4 +83,19 @@ public class PathFinder {
 		}
 		return new Path(path);
 	}
+	
+	public MapNode findNearestFirstAidStation(String start) {
+		//TODO finish this method
+		return null;
+	}
+	
+	public ArrayList<MapNode> getAllNodes(){
+		//TODO do we want to use a different data structure here?
+		//since each node stores all edges pointing away from it, we should just need to return the nodes
+		ArrayList<MapNode> temp = new ArrayList<>();
+		for(String k : map.keySet()) {
+			temp.add(map.get(k));
+		}
+		return temp;
+	}
 }

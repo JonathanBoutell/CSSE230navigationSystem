@@ -1,6 +1,10 @@
 import java.util.Arrays;
 
-public class MapEdge {
+import com.sun.javafx.geom.Shape;
+import com.sun.prism.Graphics;
+import com.sun.prism.paint.Color;
+
+public class MapEdge implements Drawable{
 	String nextNode;
 	String name;
 	double difficulty;
@@ -27,6 +31,22 @@ public class MapEdge {
 		this.nextNode = nextNode;
 		this.difficulty = difficulty;
 		this.directions = directions;
+	}
+	
+	public void draw(Graphics g) {
+		//TODO finish this method
+	}
+	
+	@Override
+	public Shape getShape() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Color getColor() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public String getName() {
@@ -60,5 +80,4 @@ public class MapEdge {
 	public void setDirections(String direc) {
 		this.directions = direc;
 	}
-
 }
