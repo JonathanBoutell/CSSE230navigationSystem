@@ -26,8 +26,6 @@ public class PathFinder {
 		if(findMaxDistance) queue = new PriorityQueue<MapNode>(Collections.reverseOrder());
 		if(map.containsKey(start) && map.containsKey(end)) { 
 			queue.offer(map.get(start));
-			//An ArrayList of visited nodes
-			ArrayList<MapNode> visited = new ArrayList<>();
 			//A HashMap mapping the destination node to the edge that it came from
 			HashMap<MapNode,MapEdge> previousEdge = new HashMap<>();
 			//A HashMap mapping the destination node to the node that it came from
@@ -41,7 +39,6 @@ public class PathFinder {
 				MapNode current = queue.poll();
 				//if the current node is the destination, reconstruct the path and return
 				if(current.findHeuristicDistance() == 0) return reconstructPath(map.get(start),current,previousEdge,previousNode);
-				visited.add(current);
 				for(MapEdge e : current.getEdges()) {
 					if(e.getDifficulty() <= maxDifficulty) {
 						MapNode next = map.get(e.getNextNode());
