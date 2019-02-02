@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class MapNode {
+public class MapNode implements Comparable<MapNode>{
 	String name;
 	double longitude;
 	double latitude;
@@ -8,6 +8,7 @@ public class MapNode {
 	double drawY;
 	boolean hasFirstAid;
 	ArrayList<MapEdge> edges;
+	MapNode destination;
 
 	public MapNode(String name, double longitude, double latitude, double drawX, double drawY, boolean firstAid) {
 		this.name = name;
@@ -20,6 +21,7 @@ public class MapNode {
 	}
 
 	public MapNode() {
+		//comment
 		this.name = null;
 		this.longitude = 0;
 		this.latitude = 0;
@@ -27,6 +29,22 @@ public class MapNode {
 		this.drawY = 0;
 		this.hasFirstAid = false;
 		this.edges = new ArrayList<>();
+	}
+	
+	public void updateDestination(MapNode newDest) {
+		this.destination = newDest;
+	}
+	
+	public MapNode destination() {
+		return this.destination;
+	}
+	
+	public double findHeuristicDistance() {
+		return distanceBetween(this.destination);
+	}
+	
+	public double distanceBetween(MapNode destination) {
+		return Math.sqrt((this.longitude - destination.longitude)*(this.longitude - destination.longitude) + (this.latitude - destination.latitude)*(this.latitude - destination.latitude));
 	}
 
 	public void setName(String name) {
@@ -94,8 +112,13 @@ public class MapNode {
 		for (MapEdge edge : this.edges) {
 			returnValue += String.format("<%s => %s>\n", this.name, edge.nextNode);
 		}
-		returnValue += String.format("%b}", this.hasFirstAid);
+		returnValue += String.format("first aid = %b}", this.hasFirstAid);
 		return returnValue;
+	}
+
+	@Override
+	public int compareTo(MapNode o) {
+		return (int) ((int) this.findHeuristicDistance() - o.findHeuristicDistance());
 	}
 
 }

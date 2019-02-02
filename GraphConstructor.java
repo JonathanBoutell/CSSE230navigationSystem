@@ -2,6 +2,7 @@ import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -20,10 +21,18 @@ public class GraphConstructor {
 		} catch (FileNotFoundException e) {
 			nodes = new HashMap<>();
 		}
-
-		Scanner textScanner = new Scanner(System.in);
-
-		while (true) {
+		
+		File file = new File("MapData.txt");
+		Scanner textScanner;
+		try{
+			textScanner = new Scanner(file);
+		}
+		catch(FileNotFoundException e){
+			System.out.println("File not found");
+			return;
+		}
+		
+		while (textScanner.hasNext()) {
 			System.out.println("enter a command");
 			String line = textScanner.nextLine();
 			if (line.trim().toLowerCase().startsWith("end")) {
@@ -31,6 +40,8 @@ public class GraphConstructor {
 			}
 			analyzeInput(line.trim().toLowerCase().split(" "), nodes);
 		}
+		
+		textScanner.close();
 
 	}
 
