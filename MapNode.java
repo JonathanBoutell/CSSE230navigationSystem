@@ -112,7 +112,7 @@ public class MapNode implements Comparable<MapNode>{
 		for (MapEdge edge : this.edges) {
 			returnValue += String.format("<%s => %s>\n", this.name, edge.nextNode);
 		}
-		returnValue += String.format("%b}", this.hasFirstAid);
+		returnValue += String.format("first aid = %b}", this.hasFirstAid);
 		return returnValue;
 	}
 
