@@ -21,6 +21,7 @@ public class MapNode implements Comparable<MapNode>{
 	}
 
 	public MapNode() {
+		//comment
 		this.name = null;
 		this.longitude = 0;
 		this.latitude = 0;

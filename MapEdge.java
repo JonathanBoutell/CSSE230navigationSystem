@@ -7,6 +7,7 @@ public class MapEdge {
 	String directions;
 
 	public MapEdge() {
+		//comment
 		this.nextNode = null;
 		this.name = null;
 		this.difficulty = 0;
