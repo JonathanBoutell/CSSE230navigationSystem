@@ -92,7 +92,7 @@ public class PathFinder {
 			path.put(previousNode, edge);
 			current = previousNode;
 		}
-		return new Path(path);
+		return new Path(path, map, start);
 	}
 
 	public Path findNearestFirstAidStation(String start) {
