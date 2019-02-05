@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_141" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>blueline0</string>
+   <object class="MapNode" id="MapNode0">
+    <void property="drawX">
+     <double>803.0</double>
+    </void>
+    <void property="drawY">
+     <double>1796.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>blueline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline6</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>897596.0</double>
+    </void>
+    <void property="longitude">
+     <double>108615.0</double>
+    </void>
+    <void property="name">
+     <string>blueline0</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>sluiceway</string>
+   <object class="MapNode" id="MapNode1">
+    <void property="drawX">
+     <double>1860.0</double>
+    </void>
+    <void property="drawY">
+     <double>1325.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>lowercloudnine</string>
+       </void>
+       <void property="nextNode">
+        <string>sunsetblv1</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>886239.0</double>
+    </void>
+    <void property="longitude">
+     <double>79434.0</double>
+    </void>
+    <void property="name">
+     <string>sluiceway</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>yellowbrickroad</string>
+   <object class="MapNode" id="MapNode2">
+    <void property="drawX">
+     <double>2092.0</double>
+    </void>
+    <void property="drawY">
+     <double>2969.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>yellowbrickroad</string>
+       </void>
+       <void property="nextNode">
+        <string>basecamp1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>lowermerlin</string>
+       </void>
+       <void property="nextNode">
+        <string>basecamp1</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>940427.0</double>
+    </void>
+    <void property="longitude">
+     <double>111557.0</double>
+    </void>
+    <void property="name">
+     <string>yellowbrickroad</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>sunsetblv0</string>
+   <object class="MapNode" id="MapNode3">
+    <void property="drawX">
+     <double>2197.0</double>
+    </void>
+    <void property="drawY">
+     <double>1812.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>sunsetblv</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout0</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>904676.0</double>
+    </void>
+    <void property="longitude">
+     <double>84613.0</double>
+    </void>
+    <void property="name">
+     <string>sunsetblv0</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>sunsetblv1</string>
+   <object class="MapNode" id="MapNode4">
+    <void property="drawX">
+     <double>2100.0</double>
+    </void>
+    <void property="drawY">
+     <double>1553.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>sunsetblv</string>
+       </void>
+       <void property="nextNode">
+        <string>sunsetblv0</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>7thheavenexpress</string>
+       </void>
+       <void property="nextNode">
+        <string>crystaltraverse1</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>895819.0</double>
+    </void>
+    <void property="longitude">
+     <double>78775.0</double>
+    </void>
+    <void property="name">
+     <string>sunsetblv1</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>easyout1</string>
+   <object class="MapNode" id="MapNode5">
+    <void property="drawX">
+     <double>1976.0</double>
+    </void>
+    <void property="drawY">
+     <double>2074.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>easyout</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout0</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>connector</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout0</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>917531.0</double>
+    </void>
+    <void property="longitude">
+     <double>97808.0</double>
+    </void>
+    <void property="name">
+     <string>easyout1</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>easyout0</string>
+   <object class="MapNode" id="MapNode6">
+    <void property="drawX">
+     <double>1884.0</double>
+    </void>
+    <void property="drawY">
+     <double>2329.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>lowergearjammer</string>
+       </void>
+       <void property="nextNode">
+        <string>sideline</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>easyout</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline2</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>921724.0</double>
+    </void>
+    <void property="longitude">
+     <double>102650.0</double>
+    </void>
+    <void property="name">
+     <string>easyout0</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>easyout3</string>
+   <object class="MapNode" id="MapNode7">
+    <void property="drawX">
+     <double>1836.0</double>
+    </void>
+    <void property="drawY">
+     <double>1853.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>raceralley</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>renegade</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>bigeasy</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>easyout</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout2</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>909036.0</double>
+    </void>
+    <void property="longitude">
+     <double>94021.0</double>
+    </void>
+    <void property="name">
+     <string>easyout3</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>easyout2</string>
+   <object class="MapNode" id="MapNode8">
+    <void property="drawX">
+     <double>1765.0</double>
+    </void>
+    <void property="drawY">
+     <double>2090.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>slingshot</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout0</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>gearjammer</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout0</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>lastresort</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>fastestroute</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline5</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>catskinnerexpresschair</string>
+       </void>
+       <void property="nextNode">
+        <string>christine&apos;s</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>915916.0</double>
+    </void>
+    <void property="longitude">
+     <double>100850.0</double>
+    </void>
+    <void property="name">
+     <string>easyout2</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>basecamp2</string>
+   <object class="MapNode" id="MapNode9">
+    <void property="drawX">
+     <double>2634.0</double>
+    </void>
+    <void property="drawY">
+     <double>3298.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>excaliburgondola</string>
+       </void>
+       <void property="nextNode">
+        <string>excaliburgondola</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>953606.0</double>
+    </void>
+    <void property="longitude">
+     <double>113265.0</double>
+    </void>
+    <void property="name">
+     <string>basecamp2</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>jerseycreamroad</string>
+   <object class="MapNode" id="MapNode10">
+    <void property="drawX">
+     <double>1408.0</double>
+    </void>
+    <void property="drawY">
+     <double>1930.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>jerseycreamroad</string>
+       </void>
+       <void property="nextNode">
+        <string>excelerator</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>ross&apos;sgold</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline5</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>stokerbumps</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline5</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>908486.0</double>
+    </void>
+    <void property="longitude">
+     <double>100732.0</double>
+    </void>
+    <void property="name">
+     <string>jerseycreamroad</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>greenline1</string>
+   <object class="MapNode" id="MapNode11">
+    <void property="drawX">
+     <double>1788.0</double>
+    </void>
+    <void property="drawY">
+     <double>2759.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline0</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>lowercruiser</string>
+       </void>
+       <void property="nextNode">
+        <string>yellowbrickroad</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>930213.0</double>
+    </void>
+    <void property="longitude">
+     <double>109478.0</double>
+    </void>
+    <void property="name">
+     <string>greenline1</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>greenline2</string>
+   <object class="MapNode" id="MapNode12">
+    <void property="drawX">
+     <double>1740.0</double>
+    </void>
+    <void property="drawY">
+     <double>2918.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>excaliburgondola</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>uppermainline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline0</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>grubstake</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline1</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>920761.0</double>
+    </void>
+    <void property="longitude">
+     <double>106403.0</double>
+    </void>
+    <void property="name">
+     <string>greenline2</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>greenline0</string>
+   <object class="MapNode" id="MapNode13">
+    <void property="drawX">
+     <double>2020.0</double>
+    </void>
+    <void property="drawY">
+     <double>2709.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>sideline</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>931264.0</double>
+    </void>
+    <void property="longitude">
+     <double>108226.0</double>
+    </void>
+    <void property="name">
+     <string>greenline0</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>hugh&apos;sheaven0</string>
+   <object class="MapNode" id="MapNode14">
+    <void property="drawX">
+     <double>1667.0</double>
+    </void>
+    <void property="drawY">
+     <double>1409.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>hugh&apos;sheaven</string>
+       </void>
+       <void property="nextNode">
+        <string>sunsetblv1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>angeldust</string>
+       </void>
+       <void property="nextNode">
+        <string>sunsetblv1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>everglades</string>
+       </void>
+       <void property="nextNode">
+        <string>7thave1</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>888259.0</double>
+    </void>
+    <void property="longitude">
+     <double>85816.0</double>
+    </void>
+    <void property="name">
+     <string>hugh&apos;sheaven0</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>greenline5</string>
+   <object class="MapNode" id="MapNode15">
+    <void property="drawX">
+     <double>1561.0</double>
+    </void>
+    <void property="drawY">
+     <double>2158.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>stoker</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline3</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline4</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>blacklines</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline2</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>914701.0</double>
+    </void>
+    <void property="longitude">
+     <double>103998.0</double>
+    </void>
+    <void property="name">
+     <string>greenline5</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>greenline6</string>
+   <object class="MapNode" id="MapNode16">
+    <void property="drawX">
+     <double>1016.0</double>
+    </void>
+    <void property="drawY">
+     <double>1930.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline5</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>trapline</string>
+       </void>
+       <void property="nextNode">
+        <string>inthespirit</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>jerseycreamexpress</string>
+       </void>
+       <void property="nextNode">
+        <string>christine&apos;srendevous</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>glacierexpress</string>
+       </void>
+       <void property="nextNode">
+        <string>crystaltraverse0</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>901490.0</double>
+    </void>
+    <void property="longitude">
+     <double>106969.0</double>
+    </void>
+    <void property="name">
+     <string>greenline6</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>greenline3</string>
+   <object class="MapNode" id="MapNode17">
+    <void property="drawX">
+     <double>1344.0</double>
+    </void>
+    <void property="drawY">
+     <double>2396.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline2</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>espresso</string>
+       </void>
+       <void property="nextNode">
+        <string>excaliburgondola</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>915789.0</double>
+    </void>
+    <void property="longitude">
+     <double>108484.0</double>
+    </void>
+    <void property="name">
+     <string>greenline3</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>greenline4</string>
+   <object class="MapNode" id="MapNode18">
+    <void property="drawX">
+     <double>1112.0</double>
+    </void>
+    <void property="drawY">
+     <double>2327.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline3</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>zigzag</string>
+       </void>
+       <void property="nextNode">
+        <string>excaliburgondola</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>910065.0</double>
+    </void>
+    <void property="longitude">
+     <double>110111.0</double>
+    </void>
+    <void property="name">
+     <string>greenline4</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>excelerator</string>
+   <object class="MapNode" id="MapNode19">
+    <void property="drawX">
+     <double>1219.0</double>
+    </void>
+    <void property="drawY">
+     <double>1874.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>wishbone</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline6</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>jerseycreamroad</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline6</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>gnarlyknots</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline5.5</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>espresso</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline5.5</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>cruiser</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline5</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>904652.0</double>
+    </void>
+    <void property="longitude">
+     <double>103212.0</double>
+    </void>
+    <void property="name">
+     <string>excelerator</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>inthespirit</string>
+   <object class="MapNode" id="MapNode20">
+    <void property="drawX">
+     <double>976.0</double>
+    </void>
+    <void property="drawY">
+     <double>2064.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>inthespirit</string>
+       </void>
+       <void property="nextNode">
+        <string>glacierroad0</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>crystalglide</string>
+       </void>
+       <void property="nextNode">
+        <string>glacierroad1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>zigzag</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline4</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>905765.0</double>
+    </void>
+    <void property="longitude">
+     <double>109985.0</double>
+    </void>
+    <void property="name">
+     <string>inthespirit</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>7thave1</string>
+   <object class="MapNode" id="MapNode21">
+    <void property="drawX">
+     <double>1804.0</double>
+    </void>
+    <void property="drawY">
+     <double>1565.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>7thave</string>
+       </void>
+       <void property="nextNode">
+        <string>sunsetblv1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>lastresort</string>
+       </void>
+       <void property="nextNode">
+        <string>expressway0</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>895698.0</double>
+    </void>
+    <void property="longitude">
+     <double>84667.0</double>
+    </void>
+    <void property="name">
+     <string>7thave1</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>expressway0</string>
+   <object class="MapNode" id="MapNode22">
+    <void property="drawX">
+     <double>1880.0</double>
+    </void>
+    <void property="drawY">
+     <double>1637.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>lastresort</string>
+       </void>
+       <void property="nextNode">
+        <string>easyout3</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>expressway</string>
+       </void>
+       <void property="nextNode">
+        <string>sunsetblv1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>3.0</double>
+       </void>
+       <void property="name">
+        <string>watchout</string>
+       </void>
+       <void property="nextNode">
+        <string>sunsetblv0</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>901309.0</double>
+    </void>
+    <void property="longitude">
+     <double>88069.0</double>
+    </void>
+    <void property="name">
+     <string>expressway0</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>glacierroad2</string>
+   <object class="MapNode" id="MapNode23">
+    <void property="drawX">
+     <double>469.0</double>
+    </void>
+    <void property="drawY">
+     <double>2261.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>glacierroad</string>
+       </void>
+       <void property="nextNode">
+        <string>glacierroad1</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>902128.0</double>
+    </void>
+    <void property="longitude">
+     <double>119402.0</double>
+    </void>
+    <void property="name">
+     <string>glacierroad2</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>glacierroad1</string>
+   <object class="MapNode" id="MapNode24">
+    <void property="drawX">
+     <double>732.0</double>
+    </void>
+    <void property="drawY">
+     <double>2444.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>crystalridgeexpress</string>
+       </void>
+       <void property="nextNode">
+        <string>crystalhut</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>glacierroad</string>
+       </void>
+       <void property="nextNode">
+        <string>glacierroad0</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>906053.0</double>
+    </void>
+    <void property="longitude">
+     <double>118261.0</double>
+    </void>
+    <void property="name">
+     <string>glacierroad1</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>glacierroad0</string>
+   <object class="MapNode" id="MapNode25">
+    <void property="drawX">
+     <double>964.0</double>
+    </void>
+    <void property="drawY">
+     <double>2433.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>glacierroad</string>
+       </void>
+       <void property="nextNode">
+        <string>excaliburgondola</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>912693.0</double>
+    </void>
+    <void property="longitude">
+     <double>113552.0</double>
+    </void>
+    <void property="name">
+     <string>glacierroad0</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>greenline5.5</string>
+   <object class="MapNode" id="MapNode26">
+    <void property="drawX">
+     <double>1287.0</double>
+    </void>
+    <void property="drawY">
+     <double>2149.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline5</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>espresso</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline3</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>espgreen</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline4</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>911118.0</double>
+    </void>
+    <void property="longitude">
+     <double>106152.0</double>
+    </void>
+    <void property="name">
+     <string>greenline5.5</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>basecamp1</string>
+   <object class="MapNode" id="MapNode27">
+    <void property="drawX">
+     <double>2237.0</double>
+    </void>
+    <void property="drawY">
+     <double>3201.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>blackcombgondola</string>
+       </void>
+       <void property="nextNode">
+        <string>christine&apos;srendevous</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>magicchair</string>
+       </void>
+       <void property="nextNode">
+        <string>yellowbrickroad</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>947491.0</double>
+    </void>
+    <void property="longitude">
+     <double>115233.0</double>
+    </void>
+    <void property="name">
+     <string>basecamp1</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>sideline</string>
+   <object class="MapNode" id="MapNode28">
+    <void property="drawX">
+     <double>2279.0</double>
+    </void>
+    <void property="drawY">
+     <double>2842.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>sideline</string>
+       </void>
+       <void property="nextNode">
+        <string>yellowbrickroad</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>villagerun</string>
+       </void>
+       <void property="nextNode">
+        <string>basecamp2</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>939460.0</double>
+    </void>
+    <void property="longitude">
+     <double>108155.0</double>
+    </void>
+    <void property="name">
+     <string>sideline</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>excaliburgondola</string>
+   <object class="MapNode" id="MapNode29">
+    <void property="drawX">
+     <double>1386.0</double>
+    </void>
+    <void property="drawY">
+     <double>2618.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>1.0</double>
+       </void>
+       <void property="name">
+        <string>greenline</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>shorthorn</string>
+       </void>
+       <void property="nextNode">
+        <string>greenline1</string>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="MapEdge">
+       <void property="name">
+        <string>exceleratorchair</string>
+       </void>
+       <void property="nextNode">
+        <string>excelerator</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>923288.0</double>
+    </void>
+    <void property="longitude">
+     <double>111514.0</double>
+    </void>
+    <void property="name">
+     <string>excaliburgondola</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>glacierroad3</string>
+   <object class="MapNode" id="MapNode30">
+    <void property="drawX">
+     <double>222.0</double>
+    </void>
+    <void property="drawY">
+     <double>2079.0</double>
+    </void>
+    <void property="edges">
+     <void method="add">
+      <object class="MapEdge">
+       <void property="difficulty">
+        <double>2.0</double>
+       </void>
+       <void property="name">
+        <string>glacierroad</string>
+       </void>
+       <void property="nextNode">
+        <string>glacierroad2</string>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="latitude">
+     <double>896165.0</double>
+    </void>
+    <void property="longitude">
+     <double>118466.0</double>
+    </void>
+    <void property="name">
+     <string>glacierroad3</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
