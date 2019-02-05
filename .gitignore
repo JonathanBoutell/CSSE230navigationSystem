@@ -4,5 +4,9 @@
 /BinarySearchTree$PreOrderIterator.class
 /BinarySearchTree.class
 /Main.class
-/MainGUI.class
-/MapFrame.class
+/GraphConstructor.class
+/MapEdge.class
+/MapNode.class
+/PathFinder.class
+/Path.class
+/Drawable.class
