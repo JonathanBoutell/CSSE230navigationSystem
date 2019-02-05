@@ -1,14 +1,14 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Shape;
 import java.util.Arrays;
-
-import com.sun.javafx.geom.Shape;
-import com.sun.prism.Graphics;
-import com.sun.prism.paint.Color;
 
 public class MapEdge implements Drawable{
 	String nextNode;
 	String name;
 	double difficulty;
 	String directions;
+	Color color;
 
 	public MapEdge() {
 		//comment
@@ -16,6 +16,7 @@ public class MapEdge implements Drawable{
 		this.name = null;
 		this.difficulty = 0;
 		this.directions = null;
+		color = Color.RED;
 	}
 
 	public MapEdge(String[] parameters) {
@@ -23,7 +24,7 @@ public class MapEdge implements Drawable{
 		this.nextNode = parameters[3];
 		this.difficulty = Double.parseDouble(parameters[4]);
 		String.join(" ", Arrays.copyOfRange(parameters, 5, parameters.length - 1));
-
+		findColor();
 	}
 
 	public MapEdge(String name, String nextNode, double difficulty, String directions) {
@@ -31,22 +32,19 @@ public class MapEdge implements Drawable{
 		this.nextNode = nextNode;
 		this.difficulty = difficulty;
 		this.directions = directions;
+		findColor();
 	}
 	
 	public void draw(Graphics g) {
-		//TODO finish this method
+		draw(g, color);
 	}
 	
-	@Override
-	public Shape getShape() {
-		// TODO Auto-generated method stub
-		return null;
+	public void highlight(Graphics g) {
+		draw(g, Color.YELLOW);
 	}
-
-	@Override
-	public Color getColor() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	private void draw(Graphics g, Color c) {
+		// TODO Implement Drawing
 	}
 
 	public String getName() {
@@ -79,5 +77,16 @@ public class MapEdge implements Drawable{
 
 	public void setDirections(String direc) {
 		this.directions = direc;
+	}
+	
+	private void findColor() {
+		if(difficulty == 0)
+			this.color = Color.RED;
+		else if(difficulty == 1)
+			this.color = Color.GREEN;
+		else if(difficulty == 2)
+			this.color = Color.BLUE;
+		else
+			this.color = Color.BLACK;
 	}
 }
