@@ -1,7 +1,8 @@
-import com.sun.javafx.geom.Shape;
-import com.sun.prism.paint.Color;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Shape;
 
 public interface Drawable {
-	public Shape getShape();
-	public Color getColor();
+	public void draw(Graphics g);
+	public void highlight(Graphics g);
 }
