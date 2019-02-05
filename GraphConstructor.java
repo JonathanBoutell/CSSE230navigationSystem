@@ -31,9 +31,12 @@ public class GraphConstructor {
 			System.out.println("File not found");
 			return;
 		}
+		textScanner.nextLine();
+		textScanner.nextLine();
+		textScanner.nextLine();
+		textScanner.nextLine();
 		
 		while (textScanner.hasNext()) {
-			System.out.println("enter a command");
 			String line = textScanner.nextLine();
 			if (line.trim().toLowerCase().startsWith("end")) {
 				break;
@@ -51,6 +54,7 @@ public class GraphConstructor {
 				System.out.println("invalid format\n" + nodeHelp + '\n' + edgeHelp);
 				return;
 			}
+			System.out.println("created node " + line[1]);
 			map.put(line[1], new MapNode(line[1], Double.parseDouble(line[2]), Double.parseDouble(line[3]),
 					Double.parseDouble(line[4]), Double.parseDouble(line[5]), Boolean.parseBoolean(line[6])));
 
@@ -70,7 +74,7 @@ public class GraphConstructor {
 		} else if (line[0].equals("print")) {
 			System.out.println(map);
 		} else {
-			System.out.println("invalid input, please enter one of the following\n" + nodeHelp + "\n" + edgeHelp);
+			System.out.println("invalid input: " + line.toString() + "\nplease enter one of the following\n" + nodeHelp + "\n" + edgeHelp);
 		}
 	}
 

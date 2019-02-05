@@ -129,9 +129,9 @@ public class MapNode implements Comparable<MapNode>, Drawable{
 	public String toString() {
 		String returnValue = "{";
 		for (MapEdge edge : this.edges) {
-			returnValue += String.format("<%s => %s>\n", this.name, edge.nextNode);
+			returnValue += String.format("<%s => %s>", this.name, edge.nextNode);
 		}
-		returnValue += String.format("first aid = %b}", this.hasFirstAid);
+		returnValue += String.format("first aid = %b}\n", this.hasFirstAid);
 		return returnValue;
 	}
 
