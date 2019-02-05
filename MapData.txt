@@ -37,7 +37,7 @@ Edge: GreenLine GreenLine1 GreenLine0 1 Continue left onto GreenLine
 Edge: LowerCruiser GreenLine1 YellowBrickRoad 2 Make a right onto LowerCruiser
 Node: ExcaliburGondola 111514 923288 1386 2618 0
 Edge: GreenLine ExcaliburGondola GreenLine1 1 Take a right onto GreenLine
-Edge: ShortHorn ExcaliburGondola GreenLine1 Take a left onto ShortHorn
+Edge: ShortHorn ExcaliburGondola GreenLine1 2 Take a left onto ShortHorn
 Edge: ExceleratorChair ExcaliburGondola Excelerator 0 Take the Excelerator Chair up
 Node: GreenLine3 108484 915789 1344 2396 0
 Edge: GreenLine GreenLine3 GreenLine2 1 Take a left onto GreenLine
@@ -76,7 +76,7 @@ Edge: Wishbone Excelerator GreenLine6 2 Continue to the right on Wishbone
 Edge: JerseyCreamRoad Excelerator GreenLine6 2 Go down the mountain then turn right onto JerseyCreamRoad.
 Edge: GnarlyKnots Excelerator GreenLine5.5 3 Take a left onto Espresso then veer straight down to reach Gnarly Knots. Merge with Espresso again.
 Edge: Espresso Excelerator GreenLine5.5 2 Choose one of three paths down the mountain which follow the Excelerator Express. Buzz Cut, HoneyComb and Espresso.
-Edge: Cruiser Excelerator GreenLine5 Take a left onto Espresso then veer left to reach Cruiser.
+Edge: Cruiser Excelerator GreenLine5 2 Take a left onto Espresso then veer left to reach Cruiser.
 Node: JerseyCreamRoad 100732 908486 1408 1930 0
 Edge: JerseyCreamRoad JerseyCreamRoad Excelerator 1 Take a right onto Jersey Cream Road.
 Edge: Ross'sGold JerseyCreamRoad GreenLine5 2 Continue Straight down on Ross's Gold.
@@ -85,7 +85,7 @@ Node: BlueLine0 108615 897596 803 1796 0
 Edge: BlueLine BlueLine0 GreenLine6 2 Continue down on BlueLine.
 Node: EasyOut3 094021 909036 1836 1853 0
 Edge: RacerAlley EasyOut3 EasyOut1 2 Take the first left onto RacerAlley
-Edge: Renagade EasyOut3 EasyOut1 Take the second left onto Renegade, then merge with Racer Alley
+Edge: Renegade EasyOut3 EasyOut1 3 Take the second left onto Renegade, then merge with Racer Alley
 Edge: BigEasy EasyOut3 EasyOut1 1 Take the third left onto Big Easy.
 Edge: EasyOut EasyOut3 EasyOut2 1 Continue straight and to the right onto Last Resort.
 Node: SunsetBLV0 084613 904676 2197 1812 0
@@ -94,13 +94,12 @@ Node: Expressway0 088069 901309 1880 1637 0
 Edge: LastResort Expressway0 EasyOut3 1 Take a right onto Last Resort.
 Edge: Expressway Expressway0 SunsetBLV1 1 Continue left onto Expressway.
 Edge: WatchOut Expressway0 SunsetBLV0 3 Take one of four Black Paths that branch off of Expressway to the right. They are Raptor'sRide, Where'sJoe, WatchOut, and YardSale.
-Node: SunsetBLV1 078775 895819 2100 1553
+Node: SunsetBLV1 078775 895819 2100 1553 0
 Edge: SunsetBLV SunsetBLV1 SunsetBLV0 1 Continue onto Sunset Boulevard.
 Edge: 7thHeavenExpress SunsetBLV1 CrystalTraverse1 0 Take the 7thHeaven Express up.
 Node: 7thAve1 084667 895698 1804 1565 0
-Edge: 7thAve 7thAve1 SunsetBLV1 1 Take a left onto 7thAve down the mountain, then make a 
-right.
-Edge: LastResort 7thAve1 Expressway0 Take a right onto LastResort.
+Edge: 7thAve 7thAve1 SunsetBLV1 1 Take a left onto 7thAve down the mountain, then make a right.
+Edge: LastResort 7thAve1 Expressway0 1 Take a right onto LastResort.
 Node: SluiceWay 079434 886239 1860 1325 0
 Edge: LowerCloudNine SluiceWay SunsetBLV1 2 Continue down the mountain on LowerCloudNine.
 Node: Hugh'sHeaven0 085816 888259 1667 1409 0

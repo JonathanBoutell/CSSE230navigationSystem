@@ -21,13 +21,15 @@ public class GraphConstructor {
 		} catch (FileNotFoundException e) {
 			nodes = new HashMap<>();
 		}
-		
+
+		// Scanner textScanner = new Scanner(System.in); // used for console
+		// input
+
 		File file = new File("MapData.txt");
 		Scanner textScanner;
-		try{
+		try {
 			textScanner = new Scanner(file);
-		}
-		catch(FileNotFoundException e){
+		} catch (FileNotFoundException e) {
 			System.out.println("File not found");
 			return;
 		}
@@ -35,20 +37,27 @@ public class GraphConstructor {
 		textScanner.nextLine();
 		textScanner.nextLine();
 		textScanner.nextLine();
-		
+
 		while (textScanner.hasNext()) {
+			// while(true){ //used for console input
 			String line = textScanner.nextLine();
 			if (line.trim().toLowerCase().startsWith("end")) {
 				break;
 			}
 			analyzeInput(line.trim().toLowerCase().split(" "), nodes);
 		}
-		
+		try {
+			write(nodes);
+		} catch (FileNotFoundException exception) {
+			System.out.println("failed to write the file");
+			exception.printStackTrace();
+		}
 		textScanner.close();
 
 	}
 
 	static void analyzeInput(String[] line, HashMap<String, MapNode> map) {
+		System.out.println("");
 		if (line[0].equals("node:")) {
 			if (line.length != 7) {
 				System.out.println("invalid format\n" + nodeHelp + '\n' + edgeHelp);
@@ -74,7 +83,8 @@ public class GraphConstructor {
 		} else if (line[0].equals("print")) {
 			System.out.println(map);
 		} else {
-			System.out.println("invalid input: " + line.toString() + "\nplease enter one of the following\n" + nodeHelp + "\n" + edgeHelp);
+			System.out.println("invalid input: " + line.toString() + "\nplease enter one of the following\n" + nodeHelp
+					+ "\n" + edgeHelp);
 		}
 	}
 
