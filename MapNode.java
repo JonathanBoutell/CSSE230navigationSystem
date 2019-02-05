@@ -1,8 +1,9 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Shape;
 import java.util.ArrayList;
 
-import com.sun.javafx.geom.Shape;
-import com.sun.prism.Graphics;
-import com.sun.prism.paint.Color;
+
 
 public class MapNode implements Comparable<MapNode>, Drawable{
 	String name;
@@ -25,19 +26,15 @@ public class MapNode implements Comparable<MapNode>, Drawable{
 	}
 	
 	public void draw(Graphics g) {
-		//TODO finish this method
+		draw(g, Color.BLACK);
 	}
 	
-	@Override
-	public Shape getShape() {
-		// TODO Auto-generated method stub
-		return null;
+	public void highlight(Graphics g) {
+		draw(g, Color.YELLOW);
 	}
-
-	@Override
-	public Color getColor() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	private void draw(Graphics g, Color c) {
+		// TODO Implement Drawing
 	}
 
 	public MapNode() {
