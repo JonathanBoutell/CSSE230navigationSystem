@@ -1,9 +1,11 @@
+import java.awt.Graphics;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class Path {
+public class Path implements Drawable{
 	private HashMap<MapNode,MapEdge> map;
 	private HashMap<String, MapNode> nodes;
 	private MapNode startNode;
@@ -46,5 +48,33 @@ public class Path {
 			}
 		}
 		return (int)max;
+	}
+	
+	@Override
+	public void draw(Graphics g) {
+		startNode.draw(g);
+		for(MapEdge edge : map.values()) {
+			edge.draw(g);
+			nodes.get(edge.getNextNode()).draw(g);
+		}
+	}
+
+	@Override
+	public void highlight(Graphics g) {
+		startNode.highlight(g);
+		for(MapEdge edge : map.values()) {
+			edge.highlight(g);
+			nodes.get(edge.getNextNode()).highlight(g);
+		}
+	}
+	
+	public ArrayList<String> generateDirections() {
+		ArrayList<String> directions = new ArrayList<String>();
+		MapNode currentNode = startNode;
+		MapEdge currentEdge = map.get(startNode);
+		//while() {
+		//	currentNode = nodes.get(currentEdge.getNextNode());
+		//}
+		return null;
 	}
 }
