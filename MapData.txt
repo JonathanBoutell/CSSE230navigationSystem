@@ -82,7 +82,8 @@ Edge: JerseyCreamRoad JerseyCreamRoad Excelerator 1 Take a right onto Jersey Cre
 Edge: Ross'sGold JerseyCreamRoad GreenLine5 2 Continue Straight down on Ross's Gold.
 Edge: StokerBumps JerseyCreamRoad GreenLine5 3 Take a right then immediately left onto StokerBumps.
 Node: BlueLine0 108615 897596 803 1796 0
-Edge: BlueLine BlueLine0 GreenLine6 2 Continue down on BlueLine.
+Edge: BlueLine BlueLine0 GreenLine6 2 Continue down and left on BlueLine.
+Edge: TrapLine BlueLine0 InTheSpirit 2 Continue straight past the lodge onto Trapline.
 Node: EasyOut3 094021 909036 1836 1853 0
 Edge: RacerAlley EasyOut3 EasyOut1 2 Take the first left onto RacerAlley
 Edge: Renegade EasyOut3 EasyOut1 3 Take the second left onto Renegade, then merge with Racer Alley
@@ -106,3 +107,17 @@ Node: Hugh'sHeaven0 085816 888259 1667 1409 0
 Edge: Hugh'sHeaven Hugh'sHeaven0 SunsetBLV1 2 Keep to the left on Hugh's Heaven.
 Edge: AngelDust Hugh'sHeaven0 SunsetBLV1 3 Keep to the left then make a right onto AngelDust.
 Edge: Everglades Hugh'sHeaven0 7thAve1 3 Take a left onto Everglades.
+Node: BlueLine1 951 1713 104451 893684 0
+Edge: GlacierDrive BlueLine1 GreenLine6 3 Take a left onto Glacier Drive
+Edge: BlueLine BLueline1 BlueLine0 2 Continue to the right on Blueline
+Node: CrystalRoad0 640 1838 112054 897599 0
+Edge: CrystalRoad CrystalRoad0 GreenLine6 1 Continue to the left on GreenLine
+Edge: Rock'N'Roll CrystalRoad0 GlacierRoad1 2 Take the second right down the mountain onto Rock'N'Roll
+Edge: BackStagePass CrystalRoad0 GlacierRoad2 2 Take the first right down the mountain onto BackStagePass
+Edge: Rider'sRevenge CrystalRoad0 InTheSpirit 3 Take the third right down the mountain onto Rider'sRevenge
+Node: CrystalRoad1 459 1754 112497 893499 0
+Edge: OuterLimits CrystalRoad1 GlacierRoad3 4 Take a right turn down OuterLimits
+Edge: Aurthur'sChoice CrystalRoad1 GlacierRoad3 3 Take a right then immediately left down Aurthur'sChoice
+Edge: TwistShout CrystalRoad1 GlacierRoad3 2 Go slightly right down Twist and Shout
+Edge: RidgeRunner CrystalRoad1 GlacierRoad2 2 Go straight down on RidgeRunner
+Edge: CrystalRoad CrystalRoad1 CrystalRoad0 1 Keep to the left to stay on Crystal Road
