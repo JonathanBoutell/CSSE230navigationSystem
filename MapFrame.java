@@ -1,7 +1,10 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.GridLayout;
+import java.awt.Image;
 
+import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -12,7 +15,7 @@ import javax.swing.JTextField;
 public class MapFrame {
 
 	public static final int MAP_WIDTH = 1500;
-	public static final int MAP_HEIGHT = 800;	
+	public static final int MAP_HEIGHT = 1000;	
 	
 	public MapFrame() {
 		JFrame frame = new JFrame();
@@ -51,7 +54,14 @@ public class MapFrame {
 		selectionPanel.add(emergencyPhoneSelect);
 		selectionPanel.add(skiLiftSelect);
 		
+		ImageIcon trailImage = new ImageIcon(getClass().getResource("trails.png"));
+		trailImage = new ImageIcon(trailImage.getImage().getScaledInstance(
+				(int)(trailImage.getIconWidth()/4.2), 
+				(int)(trailImage.getIconHeight()/4.2), Image.SCALE_DEFAULT));
+		JLabel trailLabel = new JLabel(trailImage);
+		
 		frame.add(holder);
+		holder.add(trailLabel, BorderLayout.WEST);
 		holder.add(selectionPanel, BorderLayout.NORTH);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
