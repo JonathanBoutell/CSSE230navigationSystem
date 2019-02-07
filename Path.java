@@ -1,6 +1,5 @@
 import java.awt.Graphics;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -76,5 +75,22 @@ public class Path implements Drawable{
 		//	currentNode = nodes.get(currentEdge.getNextNode());
 		//}
 		return null;
+	}
+	
+	public boolean equal(Path otherPath){
+		if(!this.map.equals(otherPath.map)) return false;
+		if(this.startNode != otherPath.startNode) return false;
+		return true;
+	}
+	
+	public String toString(){
+		String str = "{" + this.startNode.name;
+		MapEdge edge = this.map.get(this.startNode);
+		for(int i=0; i<this.map.size();i++){
+			str += "=>" + edge.nextNode;
+			edge = this.map.get(edge.nextNode);
+		}
+		str += "}";
+		return str;
 	}
 }

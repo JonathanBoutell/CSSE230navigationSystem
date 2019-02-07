@@ -1,6 +1,5 @@
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Shape;
 import java.util.ArrayList;
 
 
@@ -124,11 +123,11 @@ public class MapNode implements Comparable<MapNode>, Drawable{
 	}
 
 	public String toString() {
-		String returnValue = "{";
+		String returnValue = this.name + "=>{";
 		for (MapEdge edge : this.edges) {
-			returnValue += String.format("<%s => %s>", this.name, edge.nextNode);
+			returnValue += String.format("%s ", edge.nextNode);
 		}
-		returnValue += String.format("first aid = %b}\n", this.hasFirstAid);
+		returnValue += String.format("} first aid = %b\n", this.hasFirstAid);
 		return returnValue;
 	}
 
