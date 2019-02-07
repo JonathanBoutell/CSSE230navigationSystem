@@ -72,9 +72,11 @@ public class Path implements Drawable{
 		ArrayList<String> directions = new ArrayList<String>();
 		MapNode currentNode = startNode;
 		MapEdge currentEdge = map.get(startNode);
-		//while() {
-		//	currentNode = nodes.get(currentEdge.getNextNode());
-		//}
-		return null;
+		while(map.containsKey(currentNode)) {
+			directions.add(currentEdge.directions);
+			currentNode = nodes.get(currentEdge.getNextNode());
+			currentEdge = map.get(currentNode);
+		}
+		return directions;
 	}
 }
