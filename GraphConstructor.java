@@ -22,7 +22,7 @@ public class GraphConstructor {
 			nodes = new HashMap<>();
 		}
 
-		// Scanner textScanner = new Scanner(System.in); // used for console
+		//Scanner textScanner = new Scanner(System.in); // used for console
 		// input
 
 		File file = new File("MapData.txt");
@@ -39,7 +39,7 @@ public class GraphConstructor {
 		textScanner.nextLine();
 
 		while (textScanner.hasNext()) {
-			// while(true){ //used for console input
+			 //while(true){ //used for console input
 			String line = textScanner.nextLine();
 			if (line.trim().toLowerCase().startsWith("end")) {
 				break;

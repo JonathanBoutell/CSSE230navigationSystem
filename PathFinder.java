@@ -22,8 +22,15 @@ public class PathFinder {
 		decoder.close();
 		return nodes;
 	}
+	
+	public void setMap(HashMap<String, MapNode> newMap){
+		this.map = newMap;
+	}
 
 	public Path runAStar(boolean findMaxDistance, String start, String end, double maxDifficulty) {
+		if(this.map.get(end) == null){
+			return null;
+		}
 		PriorityQueue<MapNode> queue = new PriorityQueue<MapNode>();
 		if (findMaxDistance)
 			queue = new PriorityQueue<MapNode>(Collections.reverseOrder());
@@ -38,11 +45,13 @@ public class PathFinder {
 			// A HashMap mapping each open node to its (distance from start) +
 			// (heuristic distance from end)
 			HashMap<MapNode, Double> openNodes = new HashMap<>();
+			openNodes.put(this.map.get(start), 0.0);
 			// An ArrayList of closed nodes
 			ArrayList<MapNode> closedNodes = new ArrayList<>();
 			while (!queue.isEmpty()) {
 				// process the next node from the queue
 				MapNode current = queue.poll();
+				current.updateDestination(this.map.get(end));
 				// if the current node is the destination, reconstruct the path
 				// and return
 				if (current.findHeuristicDistance() == 0)
@@ -56,6 +65,9 @@ public class PathFinder {
 									+ next.findHeuristicDistance();
 							if (!openNodes.containsKey(next)) {
 								openNodes.put(next, dist);
+								queue.offer(next);
+								previousNode.put(next, current);
+								previousEdge.put(next, e);
 							} else {
 								double otherDistance = openNodes.get(next);
 								if (findMaxDistance) {
@@ -63,12 +75,14 @@ public class PathFinder {
 										previousEdge.put(next, e);
 										previousNode.put(next, current);
 										openNodes.put(next, dist);
+										queue.add(next);
 									}
 								} else {
 									if (dist < otherDistance) {
 										previousEdge.put(next, e);
 										previousNode.put(next, current);
 										openNodes.put(current, dist);
+										queue.add(next);
 									}
 								}
 							}
@@ -92,7 +106,7 @@ public class PathFinder {
 			path.put(previousNode, edge);
 			current = previousNode;
 		}
-		return new Path(path, map, start);
+		return new Path(path, this.map, start);
 	}
 
 	public Path findNearestFirstAidStation(String start) {
@@ -131,5 +145,9 @@ public class PathFinder {
 			temp.add(map.get(k));
 		}
 		return temp;
+	}
+	
+	public HashMap<String, MapNode> getNodes(){
+		return this.map;
 	}
 }

@@ -1,6 +1,5 @@
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Shape;
 import java.util.Arrays;
 
 public class MapEdge implements Drawable{
@@ -89,4 +88,10 @@ public class MapEdge implements Drawable{
 		else
 			this.color = Color.BLACK;
 	}
+	
+	public String toString(){
+		return this.name + ", to:" + this.nextNode;
+	}
+	
+	
 }
