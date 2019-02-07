@@ -41,17 +41,13 @@ public class PathFinderTest {
 			HashMap<MapNode, MapEdge> edges = new HashMap<>();
 			HashMap<String, MapNode> nodes = test.getNodes();
 			MapNode greenLine = nodes.get("greenline5");
-			System.out.println(greenLine);
 			for (MapEdge e : greenLine.getEdges()) {
-				if (e.name == "stoker") {
+				if (e.name.equals("stoker")) {
 					edges.put(greenLine, e);
-					System.out.println("found edge");
-					System.out.println(e);
 					break;
 				}
 			}
 			Path path = new Path(edges, test.getNodes(), greenLine);
-
 			assertEquals(path, test.runAStar(false, true, "greenline5", "greenline3", 4));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
