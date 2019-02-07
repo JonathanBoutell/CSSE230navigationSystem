@@ -121,3 +121,36 @@ Edge: Aurthur'sChoice CrystalRoad1 GlacierRoad3 3 Take a right then immediately 
 Edge: TwistShout CrystalRoad1 GlacierRoad3 2 Go slightly right down Twist and Shout
 Edge: RidgeRunner CrystalRoad1 GlacierRoad2 2 Go straight down on RidgeRunner
 Edge: CrystalRoad CrystalRoad1 CrystalRoad0 1 Keep to the left to stay on Crystal Road
+Node: CrystalHut 107873 892420 626 1624 0
+Edge: RidgeRunner CrystalHut CrystalRoad1 2 Take a right onto RidgeRunner.
+Edge: Rock'N'Roll CrystalHut CrystalRoad0 2 Go straight and then keep right onto Rock'N'Roll.
+Edge: TrapLine CrystalHut InTheSpirit 2 Go stright and then keep left onto Trapline
+Edge: StraightShot CrystalHut BlueLine0 3 Take a slight left onto StraightShot
+Edge: Overbite CrystalHut BlueLine1 3 Take a left and then a right onto OverBite
+Edge: CrystalRoad CrystalHut CrystalRoad1 1 Take a slight right onto CrystalRoad
+Node: RidgeA 103780 895569 1162 1709 0
+Edge: Staircase RidgeA GreenLine6 3 Choose one of three black routes down. The Bite, Staircase, or Blowdown.
+Node: Christine's 096455 901654 1492 1652 1
+Edge: Ross'sGold Christine's JerseyCreamRoad 2 Go straight down Ross'sGold.
+Edge: SpringBoard Christine's GreenLine5 2 Go straight and slightly left down SpringBoard
+Edge: HikeA Christine's RidgeA 0 Hike along the ridge on the right to get to The Bite, Staircase and Blowdown.
+Edge: JerseyCream Christine's GreenLine6 2 Take a right down Jersey Cream.
+Edge: Expressway Christine's Expressway0 1 Take a slight left down Expressway
+Edge: 7thAve Christine's 7thAve1 1 Take a left down 7thAve.
+Edge: CatSkinner Christine's EasyOut2 3 Go straight down CatSkinner.
+Edge: BarkSandwich Christine's Easyout3 3 Go down Expressway then immediately to the right down BarkSandwich.
+Edge: GreenSomething Christine's EasyOut3 1 Go down Expressway then take the second right down BigEasy.
+Node: JerseyBowl 093140 895182 1342 1527 0
+Edge: JerseyBowl JerseyBowl Christine's 4 Ride down the JerseyBowl.
+Node: BlueLine2 094970 885007 1041 1464 0
+Edge: SecretChute BlueLine2 BlueLine1 3 Go straight down onto Secret Chute.
+Edge: BlueLine BlueLine2 BlueLine1 2 Take a right onto BlueLine.
+Edge: Pakalolo BlueLine2 BlueLine1 4 Take a left onto Pakalolo
+Node: CrystalTraverse0 095797 881213 850 1345 0
+Edge: CrystalTraverse CrystalTraverse0 CrystalHut 2 Take a right down CrystalTraverse
+Edge: Dave'sDayOff CrystalTraverse0 BlueLine1 3 Go down CrystalTraverse then take a left onto Dave'sDayOff
+Edge: TheNextLevel CrystalTraverse0 BlueLine1 3 Go straight down TheNextLevel
+Edge: HorstManTBar CrystalTraverse0 CrystalTraverse1 0 Go down the mountain a bit to reach the Horstman TBar. Take it up the mountain
+Edge: ShowCaseTBar CrystalTraverse0 ShowCase 0 Take the ShowCaseTBar up the mountain
+Node: ShowCase 091278 876562 991 1080 0
+Edge: ShowCase ShowCase CrystalTraverse0 2 Take Showcase down the mountain
