@@ -12,17 +12,15 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class MapFrame {
-
-	public static final int MAP_WIDTH = 1500;
-	public static final int MAP_HEIGHT = 1000;	
+public class MapFrame {	
 	
 	public MapFrame() {
 		JFrame frame = new JFrame();
-		frame.setSize(MAP_WIDTH, MAP_HEIGHT);
+		frame.setSize(Main.MAP_WIDTH, Main.MAP_HEIGHT);
 		frame.setTitle("Navigation System");
 		JPanel holder = new JPanel(new BorderLayout());
 		JPanel selectionPanel = new JPanel(new GridLayout(0,6));
+		MapComponent mapComponent = new MapComponent();
 		
 		JTextField startTextField = new JTextField(30);
 		JTextField endTextField = new JTextField(30);
@@ -32,7 +30,7 @@ public class MapFrame {
 		JComboBox difficultyOptions = new JComboBox(diffOptionStrs);
 		distanceOptions.setSelectedIndex(0);
 		difficultyOptions.setSelectedIndex(1);
-		JCheckBox emergencyPhoneSelect = new JCheckBox("Find Nearest Emergency Phone");
+		JCheckBox emergencyPhoneSelect = new JCheckBox("Find Nearest First Aid Station");
 		JCheckBox skiLiftSelect = new JCheckBox("Allow Ski Lifts");
 		
 		holder.setBackground(new Color(200,229,255));
@@ -61,7 +59,8 @@ public class MapFrame {
 		JLabel trailLabel = new JLabel(trailImage);
 		
 		frame.add(holder);
-		holder.add(trailLabel, BorderLayout.WEST);
+		holder.add(mapComponent,BorderLayout.WEST);
+		mapComponent.repaint();
 		holder.add(selectionPanel, BorderLayout.NORTH);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
