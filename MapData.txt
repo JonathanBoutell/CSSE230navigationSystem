@@ -30,7 +30,7 @@ Edge: LowerMerlin YellowBrickRoad BaseCamp1 2 Take the second left onto LowerMer
 Node: BaseCamp1 115233 947491 2237 3201 1
 Edge: BlackCombGondola BaseCamp1 Christine'sRendevous 0 Take the Blackcomb Gondola to Christine's Rendevous
 Edge: MagicChair BaseCamp1 YellowBrickRoad 0 Take the Magic Chair up the hill
-Node: BaseCamp2 113265 953606 2634 3298 1
+Node: BaseCamp2 113265 953606 2634 3298 true
 Edge: ExcaliburGondola BaseCamp2 ExcaliburGondola 0 Take the Excalibur Gondola
 Node: GreenLine1 109478 930213 1788 2759 0
 Edge: GreenLine GreenLine1 GreenLine0 1 Continue left onto GreenLine
@@ -69,7 +69,7 @@ Edge: BlackLines GreenLine5 GreenLine2 3 Take any of the three left paths down. 
 Node: GreenLine6 106969 901490 1016 1930 0
 Edge: GreenLine GreenLine6 GreenLine5 1 Take a left onto GreenLine.
 Edge: Trapline GreenLine6 InTheSpirit 2 Go straight down the mountain on Trapline.
-Edge: JerseyCreamExpress GreenLine6 Christine'sRendevous 0 Take the JerseyCreamExpress up
+Edge: JerseyCreamExpress GreenLine6 Christine's 0 Take the JerseyCreamExpress up
 Edge: GlacierExpress GreenLine6 CrystalTraverse0 0 Take the Glacier Express up
 Node: Excelerator 103212 904652 1219 1874 0
 Edge: Wishbone Excelerator GreenLine6 2 Continue to the right on Wishbone
@@ -121,3 +121,47 @@ Edge: Aurthur'sChoice CrystalRoad1 GlacierRoad3 3 Take a right then immediately 
 Edge: TwistShout CrystalRoad1 GlacierRoad3 2 Go slightly right down Twist and Shout
 Edge: RidgeRunner CrystalRoad1 GlacierRoad2 2 Go straight down on RidgeRunner
 Edge: CrystalRoad CrystalRoad1 CrystalRoad0 1 Keep to the left to stay on Crystal Road
+Node: CrystalHut 107873 892420 626 1624 0
+Edge: RidgeRunner CrystalHut CrystalRoad1 2 Take a right onto RidgeRunner.
+Edge: Rock'N'Roll CrystalHut CrystalRoad0 2 Go straight and then keep right onto Rock'N'Roll.
+Edge: TrapLine CrystalHut InTheSpirit 2 Go stright and then keep left onto Trapline
+Edge: StraightShot CrystalHut BlueLine0 3 Take a slight left onto StraightShot
+Edge: Overbite CrystalHut BlueLine1 3 Take a left and then a right onto OverBite
+Edge: CrystalRoad CrystalHut CrystalRoad1 1 Take a slight right onto CrystalRoad
+Node: RidgeA 103780 895569 1162 1709 0
+Edge: Staircase RidgeA GreenLine6 3 Choose one of three black routes down. The Bite, Staircase, or Blowdown.
+Node: Christine's 096455 901654 1492 1652 true
+Edge: Ross'sGold Christine's JerseyCreamRoad 2 Go straight down Ross'sGold.
+Edge: SpringBoard Christine's GreenLine5 2 Go straight and slightly left down SpringBoard
+Edge: HikeA Christine's RidgeA 0 Hike along the ridge on the right to get to The Bite, Staircase and Blowdown.
+Edge: JerseyCream Christine's GreenLine6 2 Take a right down Jersey Cream.
+Edge: Expressway Christine's Expressway0 1 Take a slight left down Expressway
+Edge: 7thAve Christine's 7thAve1 1 Take a left down 7thAve.
+Edge: CatSkinner Christine's EasyOut2 3 Go straight down CatSkinner.
+Edge: BarkSandwich Christine's Easyout3 3 Go down Expressway then immediately to the right down BarkSandwich.
+Edge: GreenSomething Christine's EasyOut3 1 Go down Expressway then take the second right down BigEasy.
+Node: JerseyBowl 093140 895182 1342 1527 0
+Edge: JerseyBowl JerseyBowl Christine's 4 Ride down the JerseyBowl.
+Node: BlueLine2 094970 885007 1041 1464 0
+Edge: SecretChute BlueLine2 BlueLine1 3 Go straight down onto Secret Chute.
+Edge: BlueLine BlueLine2 BlueLine1 2 Take a right onto BlueLine.
+Edge: Pakalolo BlueLine2 BlueLine1 4 Take a left onto Pakalolo
+Node: CrystalTraverse0 095797 881213 850 1345 0
+Edge: CrystalTraverse CrystalTraverse0 CrystalHut 2 Take a right down CrystalTraverse
+Edge: Dave'sDayOff CrystalTraverse0 BlueLine1 3 Go down CrystalTraverse then take a left onto Dave'sDayOff
+Edge: TheNextLevel CrystalTraverse0 BlueLine1 3 Go straight down TheNextLevel
+Edge: HorstManTBar CrystalTraverse0 CrystalTraverse1 0 Go down the mountain a bit to reach the Horstman TBar. Take it up the mountain
+Edge: ShowCaseTBar CrystalTraverse0 ShowCase 0 Take the ShowCaseTBar up the mountain
+Node: ShowCase 091278 876562 991 1080 0
+Edge: ShowCase ShowCase CrystalTraverse0 2 Take Showcase down the mountain
+Node: CrystalTraverse1 091734 883856 1191 1247 true
+Edge: CrystalTraverse CrystalTraverse1 CrystalTraverse0 2 Take a right onto Crystal Traverse
+Edge: BlueLine CrystalTraverse1 BlueLine2 2 Take a slight right onto Blueline
+Edge: Sylvain CrystalTraverse1 Christine's 4 Go straight down the mountain on Sylvain.
+Edge: GreenLine CrystalTraverse1 Christine's 1 Take a slight left onto Greenline
+Edge: Hugh'sHeaven CrystalTraverse1 Hugh'sHeaven0 2 Take a left onto Hugh'sHeaven
+Edge: UpperCloudNine CrystalTraverse1 SunsetBLV1 2 Take a left onto UpperCloudNine
+Edge: HikeB CrystalTraverse1 LakesideBowl 0 Hike along the edge of the mountain towards the LakesideBowl
+Edge: CliffArea CrystalTraverse1 JerseyBowl 0 Hike along the edge of the cliff towards the JerseyBowl
+Node: LakesideBowl 083433 878469 5534 3734 0
+Edge: Xiggy'sMeadow LakesideBowl Sluiceway 3 Take Xiggy'sMeadow Down the mountain

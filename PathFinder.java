@@ -23,7 +23,15 @@ public class PathFinder {
 		return nodes;
 	}
 
-	public Path runAStar(boolean findMaxDistance, String start, String end, double maxDifficulty) {
+	public void setMap(HashMap<String, MapNode> newMap) {
+		this.map = newMap;
+	}
+
+	public Path runAStar(boolean findMaxDistance, boolean allowSkiLift, String start, String end,
+			double maxDifficulty) {
+		if (this.map.get(end) == null) {
+			return null;
+		}
 		PriorityQueue<MapNode> queue = new PriorityQueue<MapNode>();
 		if (findMaxDistance)
 			queue = new PriorityQueue<MapNode>(Collections.reverseOrder());
@@ -38,17 +46,19 @@ public class PathFinder {
 			// A HashMap mapping each open node to its (distance from start) +
 			// (heuristic distance from end)
 			HashMap<MapNode, Double> openNodes = new HashMap<>();
+			openNodes.put(this.map.get(start), 0.0);
 			// An ArrayList of closed nodes
 			ArrayList<MapNode> closedNodes = new ArrayList<>();
 			while (!queue.isEmpty()) {
 				// process the next node from the queue
 				MapNode current = queue.poll();
+				current.updateDestination(this.map.get(end));
 				// if the current node is the destination, reconstruct the path
 				// and return
 				if (current.findHeuristicDistance() == 0)
 					return reconstructPath(map.get(start), current, previousEdge, previousNode);
 				for (MapEdge e : current.getEdges()) {
-					if (e.getDifficulty() <= maxDifficulty) {
+					if (e.getDifficulty() <= maxDifficulty && (allowSkiLift || e.getDifficulty() > 0)) {
 						MapNode next = map.get(e.getNextNode());
 						if (!closedNodes.contains(next)) {
 							next.updateDestination(map.get(end));
@@ -56,6 +66,9 @@ public class PathFinder {
 									+ next.findHeuristicDistance();
 							if (!openNodes.containsKey(next)) {
 								openNodes.put(next, dist);
+								queue.offer(next);
+								previousNode.put(next, current);
+								previousEdge.put(next, e);
 							} else {
 								double otherDistance = openNodes.get(next);
 								if (findMaxDistance) {
@@ -63,12 +76,14 @@ public class PathFinder {
 										previousEdge.put(next, e);
 										previousNode.put(next, current);
 										openNodes.put(next, dist);
+										queue.add(next);
 									}
 								} else {
 									if (dist < otherDistance) {
 										previousEdge.put(next, e);
 										previousNode.put(next, current);
 										openNodes.put(current, dist);
+										queue.add(next);
 									}
 								}
 							}
@@ -92,7 +107,7 @@ public class PathFinder {
 			path.put(previousNode, edge);
 			current = previousNode;
 		}
-		return new Path(path, map, start);
+		return new Path(path, this.map, start);
 	}
 
 	public Path findNearestFirstAidStation(String start) {
@@ -105,15 +120,15 @@ public class PathFinder {
 		MapNode current = null;
 		while (!queue.isEmpty()) {
 			current = queue.poll();
+			if(current.hasFirstAid){
+				return this.reconstructPath(this.map.get(start), current, traveledEdge, previousNode);
+			}
 			for (MapEdge edge : current.getEdges()) {
 				MapNode next = this.map.get(edge.nextNode);
 				if (!openNodes.contains(next) && !closedNodes.contains(next)) {
 					openNodes.add(next);
 					traveledEdge.put(next, edge);
 					previousNode.put(next, current);
-					if (next.hasFirstAid) {
-						return this.reconstructPath(this.map.get(start), next, traveledEdge, previousNode);
-					}
 				}
 			}
 			closedNodes.add(current);
@@ -131,5 +146,9 @@ public class PathFinder {
 			temp.add(map.get(k));
 		}
 		return temp;
+	}
+
+	public HashMap<String, MapNode> getNodes() {
+		return this.map;
 	}
 }
