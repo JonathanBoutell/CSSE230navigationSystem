@@ -14,44 +14,41 @@ public class PathFinderTest {
 			PathFinder test = new PathFinder();
 			HashMap<String, MapNode> emptyMap = new HashMap<>();
 			test.setMap(emptyMap);
-			assertEquals(null, test.runAStar(false, "GreenLight", "BaseCamp", 4));
+			assertEquals(null, test.runAStar(false, true, "GreenLight", "BaseCamp", 4));
 		} catch (FileNotFoundException exception) {
 			System.out.println("Failed to load file");
 			assertTrue(false);
 			exception.printStackTrace();
 		}
 
-		
 	}
-	
-	
-	@Test 
-	public void testNonExistingPath(){
+
+	@Test
+	public void testNonExistingPath() {
 		try {
 			PathFinder test = new PathFinder();
-			assertEquals(null, test.runAStar(false, "easyout0", "crystalhut0", 4));
+			assertEquals(null, test.runAStar(false, true, "easyout0", "crystalhut0", 4));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
 		}
-		
+
 	}
-	
+
 	@Test
-	public void testSingleEdgePath(){
+	public void testSingleEdgePath() {
 		try {
 			PathFinder test = new PathFinder();
 			HashMap<MapNode, MapEdge> edges = new HashMap<>();
 			HashMap<String, MapNode> nodes = test.getNodes();
 			MapNode greenLine = nodes.get("greenline5");
-			for(MapEdge e : greenLine.getEdges()){
-				if(e.name == "stoker"){
+			for (MapEdge e : greenLine.getEdges()) {
+				if (e.name.equals("stoker")) {
 					edges.put(greenLine, e);
 					break;
 				}
 			}
 			Path path = new Path(edges, test.getNodes(), greenLine);
-			
-			assertEquals(path, test.runAStar(false, "greenline5", "greenline3", 4));
+			assertEquals(path, test.runAStar(false, true, "greenline5", "greenline3", 4));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
 		}

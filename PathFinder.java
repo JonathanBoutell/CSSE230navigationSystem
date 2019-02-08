@@ -22,13 +22,14 @@ public class PathFinder {
 		decoder.close();
 		return nodes;
 	}
-	
-	public void setMap(HashMap<String, MapNode> newMap){
+
+	public void setMap(HashMap<String, MapNode> newMap) {
 		this.map = newMap;
 	}
 
-	public Path runAStar(boolean findMaxDistance, String start, String end, double maxDifficulty) {
-		if(this.map.get(end) == null){
+	public Path runAStar(boolean findMaxDistance, boolean allowSkiLift, String start, String end,
+			double maxDifficulty) {
+		if (this.map.get(end) == null) {
 			return null;
 		}
 		PriorityQueue<MapNode> queue = new PriorityQueue<MapNode>();
@@ -57,7 +58,7 @@ public class PathFinder {
 				if (current.findHeuristicDistance() == 0)
 					return reconstructPath(map.get(start), current, previousEdge, previousNode);
 				for (MapEdge e : current.getEdges()) {
-					if (e.getDifficulty() <= maxDifficulty) {
+					if (e.getDifficulty() <= maxDifficulty && (allowSkiLift || e.getDifficulty() > 0)) {
 						MapNode next = map.get(e.getNextNode());
 						if (!closedNodes.contains(next)) {
 							next.updateDestination(map.get(end));
@@ -146,8 +147,8 @@ public class PathFinder {
 		}
 		return temp;
 	}
-	
-	public HashMap<String, MapNode> getNodes(){
+
+	public HashMap<String, MapNode> getNodes() {
 		return this.map;
 	}
 }
