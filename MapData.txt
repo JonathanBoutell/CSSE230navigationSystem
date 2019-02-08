@@ -28,7 +28,7 @@ Node: YellowBrickRoad 111557 940427 2092 2969 0
 Edge: YellowBrickRoad YellowBrickRoad BaseCamp1 1 Take a slight left onto Yellow BrickRoad
 Edge: LowerMerlin YellowBrickRoad BaseCamp1 2 Take the second left onto LowerMerlin's
 Node: BaseCamp1 115233 947491 2237 3201 1
-Edge: BlackCombGondola BaseCamp1 Christine'sRendevous 0 Take the Blackcomb Gondola to Christine's Rendevous
+Edge: BlackCombGondola BaseCamp1 Christine's 0 Take the Blackcomb Gondola to Christine's Rendevous
 Edge: MagicChair BaseCamp1 YellowBrickRoad 0 Take the Magic Chair up the hill
 Node: BaseCamp2 113265 953606 2634 3298 1
 Edge: ExcaliburGondola BaseCamp2 ExcaliburGondola 0 Take the Excalibur Gondola
@@ -69,7 +69,7 @@ Edge: BlackLines GreenLine5 GreenLine2 3 Take any of the three left paths down. 
 Node: GreenLine6 106969 901490 1016 1930 0
 Edge: GreenLine GreenLine6 GreenLine5 1 Take a left onto GreenLine.
 Edge: Trapline GreenLine6 InTheSpirit 2 Go straight down the mountain on Trapline.
-Edge: JerseyCreamExpress GreenLine6 Christine'sRendevous 0 Take the JerseyCreamExpress up
+Edge: JerseyCreamExpress GreenLine6 Christine's 0 Take the JerseyCreamExpress up
 Edge: GlacierExpress GreenLine6 CrystalTraverse0 0 Take the Glacier Express up
 Node: Excelerator 103212 904652 1219 1874 0
 Edge: Wishbone Excelerator GreenLine6 2 Continue to the right on Wishbone
@@ -154,3 +154,14 @@ Edge: HorstManTBar CrystalTraverse0 CrystalTraverse1 0 Go down the mountain a bi
 Edge: ShowCaseTBar CrystalTraverse0 ShowCase 0 Take the ShowCaseTBar up the mountain
 Node: ShowCase 091278 876562 991 1080 0
 Edge: ShowCase ShowCase CrystalTraverse0 2 Take Showcase down the mountain
+Node: CrystalTraverse1 091734 883856 1191 1247 1
+Edge: CrystalTraverse CrystalTraverse1 CrystalTraverse0 2 Take a right onto Crystal Traverse
+Edge: BlueLine CrystalTraverse1 BlueLine2 2 Take a slight right onto Blueline
+Edge: Sylvain CrystalTraverse1 Christine's 4 Go straight down the mountain on Sylvain.
+Edge: GreenLine CrystalTraverse1 Christine's 1 Take a slight left onto Greenline
+Edge: Hugh'sHeaven CrystalTraverse1 Hugh'sHeaven0 2 Take a left onto Hugh'sHeaven
+Edge: UpperCloudNine CrystalTraverse1 SunsetBLV1 2 Take a left onto UpperCloudNine
+Edge: HikeB CrystalTraverse1 LakesideBowl 0 Hike along the edge of the mountain towards the LakesideBowl
+Edge: CliffArea CrystalTraverse1 JerseyBowl 0 Hike along the edge of the cliff towards the JerseyBowl
+Node: LakesideBowl 083433 878469 5534 3734 0
+Edge: Xiggy'sMeadow LakesideBowl Sluiceway 3 Take Xiggy'sMeadow Down the mountain
