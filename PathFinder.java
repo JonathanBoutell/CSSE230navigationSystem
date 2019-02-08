@@ -120,15 +120,15 @@ public class PathFinder {
 		MapNode current = null;
 		while (!queue.isEmpty()) {
 			current = queue.poll();
+			if(current.hasFirstAid){
+				return this.reconstructPath(this.map.get(start), current, traveledEdge, previousNode);
+			}
 			for (MapEdge edge : current.getEdges()) {
 				MapNode next = this.map.get(edge.nextNode);
 				if (!openNodes.contains(next) && !closedNodes.contains(next)) {
 					openNodes.add(next);
 					traveledEdge.put(next, edge);
 					previousNode.put(next, current);
-					if (next.hasFirstAid) {
-						return this.reconstructPath(this.map.get(start), next, traveledEdge, previousNode);
-					}
 				}
 			}
 			closedNodes.add(current);

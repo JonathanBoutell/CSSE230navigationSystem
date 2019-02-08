@@ -27,10 +27,10 @@ Edge: VillageRun SideLine BaseCamp2 1 Take a left onto VillageRun
 Node: YellowBrickRoad 111557 940427 2092 2969 0
 Edge: YellowBrickRoad YellowBrickRoad BaseCamp1 1 Take a slight left onto Yellow BrickRoad
 Edge: LowerMerlin YellowBrickRoad BaseCamp1 2 Take the second left onto LowerMerlin's
-Node: BaseCamp1 115233 947491 2237 3201 1
+Node: BaseCamp1 115233 947491 2237 3201 true
 Edge: BlackCombGondola BaseCamp1 Christine's 0 Take the Blackcomb Gondola to Christine's Rendevous
 Edge: MagicChair BaseCamp1 YellowBrickRoad 0 Take the Magic Chair up the hill
-Node: BaseCamp2 113265 953606 2634 3298 1
+Node: BaseCamp2 113265 953606 2634 3298 true
 Edge: ExcaliburGondola BaseCamp2 ExcaliburGondola 0 Take the Excalibur Gondola
 Node: GreenLine1 109478 930213 1788 2759 0
 Edge: GreenLine GreenLine1 GreenLine0 1 Continue left onto GreenLine
@@ -130,7 +130,7 @@ Edge: Overbite CrystalHut BlueLine1 3 Take a left and then a right onto OverBite
 Edge: CrystalRoad CrystalHut CrystalRoad1 1 Take a slight right onto CrystalRoad
 Node: RidgeA 103780 895569 1162 1709 0
 Edge: Staircase RidgeA GreenLine6 3 Choose one of three black routes down. The Bite, Staircase, or Blowdown.
-Node: Christine's 096455 901654 1492 1652 1
+Node: Christine's 096455 901654 1492 1652 true
 Edge: Ross'sGold Christine's JerseyCreamRoad 2 Go straight down Ross'sGold.
 Edge: SpringBoard Christine's GreenLine5 2 Go straight and slightly left down SpringBoard
 Edge: HikeA Christine's RidgeA 0 Hike along the ridge on the right to get to The Bite, Staircase and Blowdown.
@@ -154,7 +154,7 @@ Edge: HorstManTBar CrystalTraverse0 CrystalTraverse1 0 Go down the mountain a bi
 Edge: ShowCaseTBar CrystalTraverse0 ShowCase 0 Take the ShowCaseTBar up the mountain
 Node: ShowCase 091278 876562 991 1080 0
 Edge: ShowCase ShowCase CrystalTraverse0 2 Take Showcase down the mountain
-Node: CrystalTraverse1 091734 883856 1191 1247 1
+Node: CrystalTraverse1 091734 883856 1191 1247 true
 Edge: CrystalTraverse CrystalTraverse1 CrystalTraverse0 2 Take a right onto Crystal Traverse
 Edge: BlueLine CrystalTraverse1 BlueLine2 2 Take a slight right onto Blueline
 Edge: Sylvain CrystalTraverse1 Christine's 4 Go straight down the mountain on Sylvain.

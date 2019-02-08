@@ -53,5 +53,40 @@ public class PathFinderTest {
 			exception.printStackTrace();
 		}
 	}
+	
+	@Test
+	public void testLongPath() {
+		try {
+			PathFinder test = new PathFinder();
+			HashMap<MapNode, MapEdge> edges = new HashMap<>();
+			HashMap<String, MapNode> nodes = test.getNodes();
+			MapNode greenLine = nodes.get("greenline5");
+			for (MapEdge e : greenLine.getEdges()) {
+				if (e.name.equals("stoker")) {
+					edges.put(greenLine, e);
+					break;
+				}
+			}
+			Path path = new Path(edges, test.getNodes(), greenLine);
+			assertEquals(path, test.runAStar(true, true, "greenline5", "greenline3", 4));
+		} catch (FileNotFoundException exception) {
+			exception.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void testFirstAidAtNode(){
+		try {
+			PathFinder test = new PathFinder();
+			HashMap<MapNode, MapEdge> edges = new HashMap<>();
+			HashMap<String, MapNode> nodes = test.getNodes();
+			MapNode node = nodes.get("christine's");
+
+			Path path = new Path(edges, test.getNodes(), node);
+			assertEquals(path, test.findNearestFirstAidStation("christine's"));
+		} catch (FileNotFoundException exception) {
+			exception.printStackTrace();
+		}
+	}
 
 }

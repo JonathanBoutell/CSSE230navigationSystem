@@ -63,7 +63,6 @@ public class GraphConstructor {
 				System.out.println("invalid format\n" + nodeHelp + '\n' + edgeHelp);
 				return;
 			}
-			System.out.println("created node " + line[1]);
 			map.put(line[1], new MapNode(line[1], Double.parseDouble(line[2]), Double.parseDouble(line[3]),
 					Double.parseDouble(line[4]), Double.parseDouble(line[5]), Boolean.parseBoolean(line[6])));
 
