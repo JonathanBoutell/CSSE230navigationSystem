@@ -34,7 +34,7 @@ public class MapComponent extends JComponent {
 		if (drawPath != null) drawPath.draw(g2);
 	}
 
-	public void addPath(Path drawPath) {
+	public void setPath(Path drawPath) {
 		this.drawPath = drawPath;
 	}
 	

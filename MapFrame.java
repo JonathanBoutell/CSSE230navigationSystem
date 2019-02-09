@@ -1,12 +1,10 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -14,7 +12,6 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 public class MapFrame {	
 	PathFinder pathFinder;
@@ -123,7 +120,7 @@ public class MapFrame {
 				}
 				path = pathFinder.runAStar(findMaxDistance, allowSkiLift, start, end, maxDifficulty);
 			}
-			mapComponent.addPath(path);
+			mapComponent.setPath(path);
 			mapComponent.repaint();
 			new DirectionsFrame(path).display();
 		}
