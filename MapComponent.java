@@ -12,8 +12,10 @@ import javax.swing.JComponent;
 public class MapComponent extends JComponent {
 	
 	Image trailImage;
+	Path drawPath;
 	
 	public MapComponent(){
+		this.drawPath = null;
 		try {
 			trailImage = ImageIO.read(getClass().getResource("trailsCropped.png"));
 		} catch (IOException e) {
@@ -27,12 +29,13 @@ public class MapComponent extends JComponent {
 	@Override
 	protected void paintComponent(Graphics g){
 		super.paintComponent(g);
-		System.out.println("paint");
 		Graphics2D g2 = (Graphics2D) g;
-		g2.setBackground(Color.BLACK);
-		g2.setColor(Color.WHITE);
-		g2.drawOval(500, 500, 500, 500);
 		g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
+		if (drawPath != null) drawPath.draw(g2);
+	}
+
+	public void addPath(Path drawPath) {
+		this.drawPath = drawPath;
 	}
 	
 }
