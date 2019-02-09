@@ -125,7 +125,7 @@ public class MapFrame {
 			}
 			mapComponent.addPath(path);
 			mapComponent.repaint();
-			new DirectionsComponent(path);
+			new DirectionsFrame(path).display();
 		}
 		
 	}
