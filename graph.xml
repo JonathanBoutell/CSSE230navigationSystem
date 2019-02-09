@@ -2,7 +2,7 @@
 <java version="1.8.0_141" class="java.beans.XMLDecoder">
  <object class="java.util.HashMap">
   <void method="put">
-   <string>blueline0</string>
+   <string>blueline2</string>
    <object class="MapNode" id="MapNode0">
     <void property="drawX">
      <double>1041.0</double>
@@ -15,6 +15,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>go straight down onto secret</string>
        </void>
        <void property="name">
         <string>secretchute</string>
@@ -29,6 +32,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto</string>
+       </void>
        <void property="name">
         <string>blueline</string>
        </void>
@@ -41,6 +47,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>4.0</double>
+       </void>
+       <void property="directions">
+        <string>take a left onto</string>
        </void>
        <void property="name">
         <string>pakalolo</string>
@@ -77,6 +86,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto glacier</string>
+       </void>
        <void property="name">
         <string>glacierdrive</string>
        </void>
@@ -89,6 +101,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>continue to the right on</string>
        </void>
        <void property="name">
         <string>blueline</string>
@@ -125,6 +140,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>continue down and left on</string>
+       </void>
        <void property="name">
         <string>blueline</string>
        </void>
@@ -137,6 +155,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>continue straight past the lodge onto</string>
        </void>
        <void property="name">
         <string>trapline</string>
@@ -173,6 +194,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>continue down the mountain on</string>
+       </void>
        <void property="name">
         <string>lowercloudnine</string>
        </void>
@@ -208,6 +232,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a slight left onto yellow</string>
+       </void>
        <void property="name">
         <string>yellowbrickroad</string>
        </void>
@@ -220,6 +247,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take the second left onto</string>
        </void>
        <void property="name">
         <string>lowermerlin</string>
@@ -256,6 +286,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>continue onto sunset boulevard. merge with last</string>
+       </void>
        <void property="name">
         <string>sunsetblv</string>
        </void>
@@ -291,6 +324,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>continue onto sunset</string>
+       </void>
        <void property="name">
         <string>sunsetblv</string>
        </void>
@@ -301,6 +337,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the 7thheaven express</string>
+       </void>
        <void property="name">
         <string>7thheavenexpress</string>
        </void>
@@ -336,6 +375,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>easyout</string>
        </void>
@@ -348,6 +390,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take a right onto the connector, then merge with</string>
        </void>
        <void property="name">
         <string>connector</string>
@@ -384,6 +429,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>lowergearjammer</string>
        </void>
@@ -396,6 +444,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>continue right on</string>
        </void>
        <void property="name">
         <string>easyout</string>
@@ -432,6 +483,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take the first left onto</string>
+       </void>
        <void property="name">
         <string>raceralley</string>
        </void>
@@ -444,6 +498,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take the second left onto renegade, then merge with racer</string>
        </void>
        <void property="name">
         <string>renegade</string>
@@ -458,6 +515,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take the third left onto big</string>
+       </void>
        <void property="name">
         <string>bigeasy</string>
        </void>
@@ -470,6 +530,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>continue straight and to the right onto last</string>
        </void>
        <void property="name">
         <string>easyout</string>
@@ -506,6 +569,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a right, then immediately left onto</string>
+       </void>
        <void property="name">
         <string>slingshot</string>
        </void>
@@ -518,6 +584,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take a right, then the second left onto</string>
        </void>
        <void property="name">
         <string>gearjammer</string>
@@ -532,6 +601,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>lastresort</string>
        </void>
@@ -545,6 +617,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>turn right onto</string>
+       </void>
        <void property="name">
         <string>fastestroute</string>
        </void>
@@ -555,6 +630,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the cat skinner express chair to christine&apos;s</string>
+       </void>
        <void property="name">
         <string>catskinnerexpresschair</string>
        </void>
@@ -587,6 +665,9 @@
     <void property="edges">
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the excalibur</string>
+       </void>
        <void property="name">
         <string>excaliburgondola</string>
        </void>
@@ -625,6 +706,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>take xiggy&apos;smeadow down the</string>
+       </void>
        <void property="name">
         <string>xiggy&apos;smeadow</string>
        </void>
@@ -660,6 +744,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto jersey cream</string>
+       </void>
        <void property="name">
         <string>jerseycreamroad</string>
        </void>
@@ -673,6 +760,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>continue straight down on ross&apos;s</string>
+       </void>
        <void property="name">
         <string>ross&apos;sgold</string>
        </void>
@@ -685,6 +775,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take a right then immediately left onto</string>
        </void>
        <void property="name">
         <string>stokerbumps</string>
@@ -721,6 +814,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>continue left onto</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -733,6 +829,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>make a right onto</string>
        </void>
        <void property="name">
         <string>lowercruiser</string>
@@ -769,6 +868,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto greenline towards the excalibur</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -782,6 +884,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>uppermainline</string>
        </void>
@@ -794,6 +899,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take the second left onto</string>
        </void>
        <void property="name">
         <string>grubstake</string>
@@ -830,6 +938,9 @@
        <void property="difficulty">
         <double>4.0</double>
        </void>
+       <void property="directions">
+        <string>take a right turn down</string>
+       </void>
        <void property="name">
         <string>outerlimits</string>
        </void>
@@ -842,6 +953,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take a right then immediately left down</string>
        </void>
        <void property="name">
         <string>aurthur&apos;schoice</string>
@@ -856,6 +970,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>go slightly right down twist and</string>
+       </void>
        <void property="name">
         <string>twistshout</string>
        </void>
@@ -869,6 +986,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>go straight down on</string>
+       </void>
        <void property="name">
         <string>ridgerunner</string>
        </void>
@@ -881,6 +1001,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>keep to the left to stay on crystal</string>
        </void>
        <void property="name">
         <string>crystalroad</string>
@@ -917,6 +1040,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>continue onto</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -952,6 +1078,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>keep to the left on hugh&apos;s</string>
+       </void>
        <void property="name">
         <string>hugh&apos;sheaven</string>
        </void>
@@ -965,6 +1094,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>keep to the left then make a right onto</string>
+       </void>
        <void property="name">
         <string>angeldust</string>
        </void>
@@ -977,6 +1109,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take a left onto</string>
        </void>
        <void property="name">
         <string>everglades</string>
@@ -1013,6 +1148,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>continue to the left on</string>
+       </void>
        <void property="name">
         <string>crystalroad</string>
        </void>
@@ -1025,6 +1163,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take the second right down the mountain onto</string>
        </void>
        <void property="name">
         <string>rock&apos;n&apos;roll</string>
@@ -1039,6 +1180,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take the first right down the mountain onto</string>
+       </void>
        <void property="name">
         <string>backstagepass</string>
        </void>
@@ -1051,6 +1195,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take the third right down the mountain onto</string>
        </void>
        <void property="name">
         <string>rider&apos;srevenge</string>
@@ -1087,6 +1234,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take the center path down on</string>
+       </void>
        <void property="name">
         <string>stoker</string>
        </void>
@@ -1100,6 +1250,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take the furthest right path on</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -1112,6 +1265,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take any of the three left paths down. choose from sorcerer, black magic and</string>
        </void>
        <void property="name">
         <string>blacklines</string>
@@ -1148,6 +1304,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -1161,6 +1320,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>go straight down the mountain on</string>
+       </void>
        <void property="name">
         <string>trapline</string>
        </void>
@@ -1171,6 +1333,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the jerseycreamexpress</string>
+       </void>
        <void property="name">
         <string>jerseycreamexpress</string>
        </void>
@@ -1181,6 +1346,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the glacier express</string>
+       </void>
        <void property="name">
         <string>glacierexpress</string>
        </void>
@@ -1216,6 +1384,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -1228,6 +1399,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take a right onto</string>
        </void>
        <void property="name">
         <string>espresso</string>
@@ -1264,6 +1438,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -1276,6 +1453,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take a right onto</string>
        </void>
        <void property="name">
         <string>zigzag</string>
@@ -1312,6 +1492,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>continue to the right on</string>
+       </void>
        <void property="name">
         <string>wishbone</string>
        </void>
@@ -1324,6 +1507,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>go down the mountain then turn right onto</string>
        </void>
        <void property="name">
         <string>jerseycreamroad</string>
@@ -1338,6 +1524,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto espresso then veer straight down to reach gnarly knots. merge with espresso</string>
+       </void>
        <void property="name">
         <string>gnarlyknots</string>
        </void>
@@ -1351,6 +1540,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>choose one of three paths down the mountain which follow the excelerator express. buzz cut, honeycomb and</string>
+       </void>
        <void property="name">
         <string>espresso</string>
        </void>
@@ -1363,6 +1555,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take a left onto espresso then veer left to reach</string>
        </void>
        <void property="name">
         <string>cruiser</string>
@@ -1399,6 +1594,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>go straight down</string>
+       </void>
        <void property="name">
         <string>ross&apos;sgold</string>
        </void>
@@ -1412,6 +1610,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>go straight and slightly left down</string>
+       </void>
        <void property="name">
         <string>springboard</string>
        </void>
@@ -1422,6 +1623,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>hike along the ridge on the right to get to the bite, staircase and</string>
+       </void>
        <void property="name">
         <string>hikea</string>
        </void>
@@ -1434,6 +1638,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take a right down jersey</string>
        </void>
        <void property="name">
         <string>jerseycream</string>
@@ -1448,6 +1655,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a slight left down</string>
+       </void>
        <void property="name">
         <string>expressway</string>
        </void>
@@ -1460,6 +1670,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>take a left down</string>
        </void>
        <void property="name">
         <string>7thave</string>
@@ -1474,6 +1687,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>go straight down</string>
+       </void>
        <void property="name">
         <string>catskinner</string>
        </void>
@@ -1487,6 +1703,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>go down expressway then immediately to the right down</string>
+       </void>
        <void property="name">
         <string>barksandwich</string>
        </void>
@@ -1499,6 +1718,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>go down expressway then take the second right down</string>
        </void>
        <void property="name">
         <string>greensomething</string>
@@ -1538,6 +1760,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>continue straight down onto</string>
+       </void>
        <void property="name">
         <string>inthespirit</string>
        </void>
@@ -1551,6 +1776,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto crystal glide and merge with</string>
+       </void>
        <void property="name">
         <string>crystalglide</string>
        </void>
@@ -1563,6 +1791,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take a left onto</string>
        </void>
        <void property="name">
         <string>zigzag</string>
@@ -1599,6 +1830,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto 7thave down the mountain, then make a</string>
+       </void>
        <void property="name">
         <string>7thave</string>
        </void>
@@ -1611,6 +1845,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>take a right onto</string>
        </void>
        <void property="name">
         <string>lastresort</string>
@@ -1647,6 +1884,9 @@
        <void property="difficulty">
         <double>4.0</double>
        </void>
+       <void property="directions">
+        <string>ride down the</string>
+       </void>
        <void property="name">
         <string>jerseybowl</string>
        </void>
@@ -1682,6 +1922,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a right down</string>
+       </void>
        <void property="name">
         <string>crystaltraverse</string>
        </void>
@@ -1694,6 +1937,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>go down crystaltraverse then take a left onto</string>
        </void>
        <void property="name">
         <string>dave&apos;sdayoff</string>
@@ -1708,6 +1954,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>go straight down</string>
+       </void>
        <void property="name">
         <string>thenextlevel</string>
        </void>
@@ -1718,6 +1967,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>go down the mountain a bit to reach the horstman tbar. take it up the</string>
+       </void>
        <void property="name">
         <string>horstmantbar</string>
        </void>
@@ -1728,6 +1980,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the showcasetbar up the</string>
+       </void>
        <void property="name">
         <string>showcasetbar</string>
        </void>
@@ -1763,6 +2018,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto crystal</string>
+       </void>
        <void property="name">
         <string>crystaltraverse</string>
        </void>
@@ -1775,6 +2033,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take a slight right onto</string>
        </void>
        <void property="name">
         <string>blueline</string>
@@ -1789,6 +2050,9 @@
        <void property="difficulty">
         <double>4.0</double>
        </void>
+       <void property="directions">
+        <string>go straight down the mountain on</string>
+       </void>
        <void property="name">
         <string>sylvain</string>
        </void>
@@ -1801,6 +2065,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>take a slight left onto</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -1815,6 +2082,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>hugh&apos;sheaven</string>
        </void>
@@ -1828,6 +2098,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>uppercloudnine</string>
        </void>
@@ -1838,6 +2111,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>hike along the edge of the mountain towards the</string>
+       </void>
        <void property="name">
         <string>hikeb</string>
        </void>
@@ -1848,6 +2124,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>hike along the edge of the cliff towards the</string>
+       </void>
        <void property="name">
         <string>cliffarea</string>
        </void>
@@ -1886,6 +2165,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto</string>
+       </void>
        <void property="name">
         <string>ridgerunner</string>
        </void>
@@ -1898,6 +2180,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>go straight and then keep right onto</string>
        </void>
        <void property="name">
         <string>rock&apos;n&apos;roll</string>
@@ -1912,6 +2197,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>go stright and then keep left onto</string>
+       </void>
        <void property="name">
         <string>trapline</string>
        </void>
@@ -1924,6 +2212,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take a slight left onto</string>
        </void>
        <void property="name">
         <string>straightshot</string>
@@ -1938,6 +2229,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>take a left and then a right onto</string>
+       </void>
        <void property="name">
         <string>overbite</string>
        </void>
@@ -1950,6 +2244,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>take a slight right onto</string>
        </void>
        <void property="name">
         <string>crystalroad</string>
@@ -1986,6 +2283,9 @@
        <void property="difficulty">
         <double>3.0</double>
        </void>
+       <void property="directions">
+        <string>choose one of three black routes down. the bite, staircase, or</string>
+       </void>
        <void property="name">
         <string>staircase</string>
        </void>
@@ -2021,6 +2321,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto last</string>
+       </void>
        <void property="name">
         <string>lastresort</string>
        </void>
@@ -2034,6 +2337,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>continue left onto</string>
+       </void>
        <void property="name">
         <string>expressway</string>
        </void>
@@ -2046,6 +2352,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>3.0</double>
+       </void>
+       <void property="directions">
+        <string>take one of four black paths that branch off of expressway to the right. they are raptor&apos;sride, where&apos;sjoe, watchout, and</string>
        </void>
        <void property="name">
         <string>watchout</string>
@@ -2082,6 +2391,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>continue onto</string>
+       </void>
        <void property="name">
         <string>glacierroad</string>
        </void>
@@ -2114,6 +2426,9 @@
     <void property="edges">
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the crystalridgeexpress</string>
+       </void>
        <void property="name">
         <string>crystalridgeexpress</string>
        </void>
@@ -2126,6 +2441,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>continue onto</string>
        </void>
        <void property="name">
         <string>glacierroad</string>
@@ -2162,6 +2480,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>continue onto</string>
+       </void>
        <void property="name">
         <string>glacierroad</string>
        </void>
@@ -2197,6 +2518,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -2210,6 +2534,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>continue straight down on</string>
+       </void>
        <void property="name">
         <string>espresso</string>
        </void>
@@ -2222,6 +2549,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>continue left on</string>
        </void>
        <void property="name">
         <string>espgreen</string>
@@ -2255,6 +2585,9 @@
     <void property="edges">
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the blackcomb gondola to christine&apos;s</string>
+       </void>
        <void property="name">
         <string>blackcombgondola</string>
        </void>
@@ -2265,6 +2598,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the magic chair up the</string>
+       </void>
        <void property="name">
         <string>magicchair</string>
        </void>
@@ -2303,6 +2639,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto</string>
+       </void>
        <void property="name">
         <string>sideline</string>
        </void>
@@ -2315,6 +2654,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>1.0</double>
+       </void>
+       <void property="directions">
+        <string>take a left onto</string>
        </void>
        <void property="name">
         <string>villagerun</string>
@@ -2351,6 +2693,9 @@
        <void property="difficulty">
         <double>1.0</double>
        </void>
+       <void property="directions">
+        <string>take a right onto</string>
+       </void>
        <void property="name">
         <string>greenline</string>
        </void>
@@ -2364,6 +2709,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>take a left onto</string>
+       </void>
        <void property="name">
         <string>shorthorn</string>
        </void>
@@ -2374,6 +2722,9 @@
      </void>
      <void method="add">
       <object class="MapEdge">
+       <void property="directions">
+        <string>take the excelerator chair</string>
+       </void>
        <void property="name">
         <string>exceleratorchair</string>
        </void>
@@ -2409,6 +2760,9 @@
        <void property="difficulty">
         <double>2.0</double>
        </void>
+       <void property="directions">
+        <string>continue onto</string>
+       </void>
        <void property="name">
         <string>glacierroad</string>
        </void>
@@ -2443,6 +2797,9 @@
       <object class="MapEdge">
        <void property="difficulty">
         <double>2.0</double>
+       </void>
+       <void property="directions">
+        <string>take showcase down the</string>
        </void>
        <void property="name">
         <string>showcase</string>
