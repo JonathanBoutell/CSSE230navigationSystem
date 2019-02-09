@@ -17,7 +17,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>go straight down onto secret</string>
+        <string>go straight down onto secret chute.</string>
        </void>
        <void property="name">
         <string>secretchute</string>
@@ -33,7 +33,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto</string>
+        <string>take a right onto blueline.</string>
        </void>
        <void property="name">
         <string>blueline</string>
@@ -49,7 +49,7 @@
         <double>4.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto pakalolo</string>
        </void>
        <void property="name">
         <string>pakalolo</string>
@@ -87,7 +87,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto glacier</string>
+        <string>take a left onto glacier drive</string>
        </void>
        <void property="name">
         <string>glacierdrive</string>
@@ -103,7 +103,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue to the right on</string>
+        <string>continue to the right on blueline</string>
        </void>
        <void property="name">
         <string>blueline</string>
@@ -141,7 +141,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue down and left on</string>
+        <string>continue down and left on blueline.</string>
        </void>
        <void property="name">
         <string>blueline</string>
@@ -157,7 +157,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue straight past the lodge onto</string>
+        <string>continue straight past the lodge onto trapline.</string>
        </void>
        <void property="name">
         <string>trapline</string>
@@ -195,7 +195,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue down the mountain on</string>
+        <string>continue down the mountain on lowercloudnine.</string>
        </void>
        <void property="name">
         <string>lowercloudnine</string>
@@ -233,7 +233,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a slight left onto yellow</string>
+        <string>take a slight left onto yellow brickroad</string>
        </void>
        <void property="name">
         <string>yellowbrickroad</string>
@@ -249,7 +249,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take the second left onto</string>
+        <string>take the second left onto lowermerlin&apos;s</string>
        </void>
        <void property="name">
         <string>lowermerlin</string>
@@ -287,7 +287,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue onto sunset boulevard. merge with last</string>
+        <string>continue onto sunset boulevard. merge with last resort.</string>
        </void>
        <void property="name">
         <string>sunsetblv</string>
@@ -325,7 +325,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue onto sunset</string>
+        <string>continue onto sunset boulevard.</string>
        </void>
        <void property="name">
         <string>sunsetblv</string>
@@ -338,7 +338,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the 7thheaven express</string>
+        <string>take the 7thheaven express up.</string>
        </void>
        <void property="name">
         <string>7thheavenexpress</string>
@@ -376,7 +376,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto lastresort</string>
        </void>
        <void property="name">
         <string>easyout</string>
@@ -392,7 +392,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto the connector, then merge with</string>
+        <string>take a right onto the connector, then merge with slingshot</string>
        </void>
        <void property="name">
         <string>connector</string>
@@ -430,7 +430,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto lowergearjammer</string>
        </void>
        <void property="name">
         <string>lowergearjammer</string>
@@ -446,7 +446,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue right on</string>
+        <string>continue right on lastresort</string>
        </void>
        <void property="name">
         <string>easyout</string>
@@ -484,7 +484,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take the first left onto</string>
+        <string>take the first left onto raceralley</string>
        </void>
        <void property="name">
         <string>raceralley</string>
@@ -500,7 +500,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take the second left onto renegade, then merge with racer</string>
+        <string>take the second left onto renegade, then merge with racer alley</string>
        </void>
        <void property="name">
         <string>renegade</string>
@@ -516,7 +516,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take the third left onto big</string>
+        <string>take the third left onto big easy.</string>
        </void>
        <void property="name">
         <string>bigeasy</string>
@@ -532,7 +532,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue straight and to the right onto last</string>
+        <string>continue straight and to the right onto last resort.</string>
        </void>
        <void property="name">
         <string>easyout</string>
@@ -570,7 +570,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right, then immediately left onto</string>
+        <string>take a right, then immediately left onto slingshot</string>
        </void>
        <void property="name">
         <string>slingshot</string>
@@ -586,7 +586,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take a right, then the second left onto</string>
+        <string>take a right, then the second left onto gearjammer</string>
        </void>
        <void property="name">
         <string>gearjammer</string>
@@ -602,7 +602,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto lastresort</string>
        </void>
        <void property="name">
         <string>lastresort</string>
@@ -618,7 +618,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>turn right onto</string>
+        <string>turn right onto fastestroute</string>
        </void>
        <void property="name">
         <string>fastestroute</string>
@@ -631,7 +631,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the cat skinner express chair to christine&apos;s</string>
+        <string>take the cat skinner express chair to christine&apos;s rendezvous</string>
        </void>
        <void property="name">
         <string>catskinnerexpresschair</string>
@@ -666,7 +666,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the excalibur</string>
+        <string>take the excalibur gondola</string>
        </void>
        <void property="name">
         <string>excaliburgondola</string>
@@ -707,7 +707,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take xiggy&apos;smeadow down the</string>
+        <string>take xiggy&apos;smeadow down the mountain</string>
        </void>
        <void property="name">
         <string>xiggy&apos;smeadow</string>
@@ -745,7 +745,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto jersey cream</string>
+        <string>take a right onto jersey cream road.</string>
        </void>
        <void property="name">
         <string>jerseycreamroad</string>
@@ -761,7 +761,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue straight down on ross&apos;s</string>
+        <string>continue straight down on ross&apos;s gold.</string>
        </void>
        <void property="name">
         <string>ross&apos;sgold</string>
@@ -777,7 +777,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take a right then immediately left onto</string>
+        <string>take a right then immediately left onto stokerbumps.</string>
        </void>
        <void property="name">
         <string>stokerbumps</string>
@@ -815,7 +815,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue left onto</string>
+        <string>continue left onto greenline</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -831,7 +831,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>make a right onto</string>
+        <string>make a right onto lowercruiser</string>
        </void>
        <void property="name">
         <string>lowercruiser</string>
@@ -869,7 +869,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto greenline towards the excalibur</string>
+        <string>take a right onto greenline towards the excalibur gondola</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -885,7 +885,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto uppermainline</string>
        </void>
        <void property="name">
         <string>uppermainline</string>
@@ -901,7 +901,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take the second left onto</string>
+        <string>take the second left onto grubsteak</string>
        </void>
        <void property="name">
         <string>grubstake</string>
@@ -939,7 +939,7 @@
         <double>4.0</double>
        </void>
        <void property="directions">
-        <string>take a right turn down</string>
+        <string>take a right turn down outerlimits</string>
        </void>
        <void property="name">
         <string>outerlimits</string>
@@ -955,7 +955,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take a right then immediately left down</string>
+        <string>take a right then immediately left down aurthur&apos;schoice</string>
        </void>
        <void property="name">
         <string>aurthur&apos;schoice</string>
@@ -971,7 +971,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>go slightly right down twist and</string>
+        <string>go slightly right down twist and shout</string>
        </void>
        <void property="name">
         <string>twistshout</string>
@@ -987,7 +987,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>go straight down on</string>
+        <string>go straight down on ridgerunner</string>
        </void>
        <void property="name">
         <string>ridgerunner</string>
@@ -1003,7 +1003,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>keep to the left to stay on crystal</string>
+        <string>keep to the left to stay on crystal road</string>
        </void>
        <void property="name">
         <string>crystalroad</string>
@@ -1041,7 +1041,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue onto</string>
+        <string>continue onto greenline</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -1079,7 +1079,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>keep to the left on hugh&apos;s</string>
+        <string>keep to the left on hugh&apos;s heaven.</string>
        </void>
        <void property="name">
         <string>hugh&apos;sheaven</string>
@@ -1095,7 +1095,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>keep to the left then make a right onto</string>
+        <string>keep to the left then make a right onto angeldust.</string>
        </void>
        <void property="name">
         <string>angeldust</string>
@@ -1111,7 +1111,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto everglades.</string>
        </void>
        <void property="name">
         <string>everglades</string>
@@ -1149,7 +1149,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue to the left on</string>
+        <string>continue to the left on greenline</string>
        </void>
        <void property="name">
         <string>crystalroad</string>
@@ -1165,7 +1165,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take the second right down the mountain onto</string>
+        <string>take the second right down the mountain onto rock&apos;n&apos;roll</string>
        </void>
        <void property="name">
         <string>rock&apos;n&apos;roll</string>
@@ -1181,7 +1181,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take the first right down the mountain onto</string>
+        <string>take the first right down the mountain onto backstagepass</string>
        </void>
        <void property="name">
         <string>backstagepass</string>
@@ -1197,7 +1197,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take the third right down the mountain onto</string>
+        <string>take the third right down the mountain onto rider&apos;srevenge</string>
        </void>
        <void property="name">
         <string>rider&apos;srevenge</string>
@@ -1235,7 +1235,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take the center path down on</string>
+        <string>take the center path down on stoker</string>
        </void>
        <void property="name">
         <string>stoker</string>
@@ -1251,7 +1251,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take the furthest right path on</string>
+        <string>take the furthest right path on greenline</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -1267,7 +1267,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take any of the three left paths down. choose from sorcerer, black magic and</string>
+        <string>take any of the three left paths down. choose from sorcerer, black magic and freefall</string>
        </void>
        <void property="name">
         <string>blacklines</string>
@@ -1305,7 +1305,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto greenline.</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -1321,7 +1321,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>go straight down the mountain on</string>
+        <string>go straight down the mountain on trapline.</string>
        </void>
        <void property="name">
         <string>trapline</string>
@@ -1334,7 +1334,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the jerseycreamexpress</string>
+        <string>take the jerseycreamexpress up</string>
        </void>
        <void property="name">
         <string>jerseycreamexpress</string>
@@ -1347,7 +1347,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the glacier express</string>
+        <string>take the glacier express up</string>
        </void>
        <void property="name">
         <string>glacierexpress</string>
@@ -1385,7 +1385,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto greenline</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -1401,7 +1401,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto</string>
+        <string>take a right onto espresso</string>
        </void>
        <void property="name">
         <string>espresso</string>
@@ -1439,7 +1439,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto greenline</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -1455,7 +1455,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto</string>
+        <string>take a right onto zigzag</string>
        </void>
        <void property="name">
         <string>zigzag</string>
@@ -1493,7 +1493,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue to the right on</string>
+        <string>continue to the right on wishbone</string>
        </void>
        <void property="name">
         <string>wishbone</string>
@@ -1509,7 +1509,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>go down the mountain then turn right onto</string>
+        <string>go down the mountain then turn right onto jerseycreamroad.</string>
        </void>
        <void property="name">
         <string>jerseycreamroad</string>
@@ -1525,7 +1525,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto espresso then veer straight down to reach gnarly knots. merge with espresso</string>
+        <string>take a left onto espresso then veer straight down to reach gnarly knots. merge with espresso again.</string>
        </void>
        <void property="name">
         <string>gnarlyknots</string>
@@ -1541,7 +1541,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>choose one of three paths down the mountain which follow the excelerator express. buzz cut, honeycomb and</string>
+        <string>choose one of three paths down the mountain which follow the excelerator express. buzz cut, honeycomb and espresso.</string>
        </void>
        <void property="name">
         <string>espresso</string>
@@ -1557,7 +1557,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto espresso then veer left to reach</string>
+        <string>take a left onto espresso then veer left to reach cruiser.</string>
        </void>
        <void property="name">
         <string>cruiser</string>
@@ -1595,7 +1595,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>go straight down</string>
+        <string>go straight down ross&apos;sgold.</string>
        </void>
        <void property="name">
         <string>ross&apos;sgold</string>
@@ -1611,7 +1611,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>go straight and slightly left down</string>
+        <string>go straight and slightly left down springboard</string>
        </void>
        <void property="name">
         <string>springboard</string>
@@ -1624,7 +1624,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>hike along the ridge on the right to get to the bite, staircase and</string>
+        <string>hike along the ridge on the right to get to the bite, staircase and blowdown.</string>
        </void>
        <void property="name">
         <string>hikea</string>
@@ -1640,7 +1640,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right down jersey</string>
+        <string>take a right down jersey cream.</string>
        </void>
        <void property="name">
         <string>jerseycream</string>
@@ -1656,7 +1656,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a slight left down</string>
+        <string>take a slight left down expressway</string>
        </void>
        <void property="name">
         <string>expressway</string>
@@ -1672,7 +1672,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left down</string>
+        <string>take a left down 7thave.</string>
        </void>
        <void property="name">
         <string>7thave</string>
@@ -1688,7 +1688,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>go straight down</string>
+        <string>go straight down catskinner.</string>
        </void>
        <void property="name">
         <string>catskinner</string>
@@ -1704,7 +1704,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>go down expressway then immediately to the right down</string>
+        <string>go down expressway then immediately to the right down barksandwich.</string>
        </void>
        <void property="name">
         <string>barksandwich</string>
@@ -1720,7 +1720,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>go down expressway then take the second right down</string>
+        <string>go down expressway then take the second right down bigeasy.</string>
        </void>
        <void property="name">
         <string>greensomething</string>
@@ -1761,7 +1761,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>continue straight down onto</string>
+        <string>continue straight down onto inthespirit</string>
        </void>
        <void property="name">
         <string>inthespirit</string>
@@ -1777,7 +1777,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto crystal glide and merge with</string>
+        <string>take a right onto crystal glide and merge with rock&apos;n&apos;roll</string>
        </void>
        <void property="name">
         <string>crystalglide</string>
@@ -1793,7 +1793,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto zigzag</string>
        </void>
        <void property="name">
         <string>zigzag</string>
@@ -1831,7 +1831,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto 7thave down the mountain, then make a</string>
+        <string>take a left onto 7thave down the mountain, then make a right.</string>
        </void>
        <void property="name">
         <string>7thave</string>
@@ -1847,7 +1847,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto</string>
+        <string>take a right onto lastresort.</string>
        </void>
        <void property="name">
         <string>lastresort</string>
@@ -1885,7 +1885,7 @@
         <double>4.0</double>
        </void>
        <void property="directions">
-        <string>ride down the</string>
+        <string>ride down the jerseybowl.</string>
        </void>
        <void property="name">
         <string>jerseybowl</string>
@@ -1923,7 +1923,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right down</string>
+        <string>take a right down crystaltraverse</string>
        </void>
        <void property="name">
         <string>crystaltraverse</string>
@@ -1939,7 +1939,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>go down crystaltraverse then take a left onto</string>
+        <string>go down crystaltraverse then take a left onto dave&apos;sdayoff</string>
        </void>
        <void property="name">
         <string>dave&apos;sdayoff</string>
@@ -1955,7 +1955,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>go straight down</string>
+        <string>go straight down thenextlevel</string>
        </void>
        <void property="name">
         <string>thenextlevel</string>
@@ -1968,7 +1968,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>go down the mountain a bit to reach the horstman tbar. take it up the</string>
+        <string>go down the mountain a bit to reach the horstman tbar. take it up the mountain</string>
        </void>
        <void property="name">
         <string>horstmantbar</string>
@@ -1981,7 +1981,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the showcasetbar up the</string>
+        <string>take the showcasetbar up the mountain</string>
        </void>
        <void property="name">
         <string>showcasetbar</string>
@@ -2019,7 +2019,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto crystal</string>
+        <string>take a right onto crystal traverse</string>
        </void>
        <void property="name">
         <string>crystaltraverse</string>
@@ -2035,7 +2035,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a slight right onto</string>
+        <string>take a slight right onto blueline</string>
        </void>
        <void property="name">
         <string>blueline</string>
@@ -2051,7 +2051,7 @@
         <double>4.0</double>
        </void>
        <void property="directions">
-        <string>go straight down the mountain on</string>
+        <string>go straight down the mountain on sylvain.</string>
        </void>
        <void property="name">
         <string>sylvain</string>
@@ -2067,7 +2067,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a slight left onto</string>
+        <string>take a slight left onto greenline</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -2083,7 +2083,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto hugh&apos;sheaven</string>
        </void>
        <void property="name">
         <string>hugh&apos;sheaven</string>
@@ -2099,7 +2099,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto uppercloudnine</string>
        </void>
        <void property="name">
         <string>uppercloudnine</string>
@@ -2112,7 +2112,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>hike along the edge of the mountain towards the</string>
+        <string>hike along the edge of the mountain towards the lakesidebowl</string>
        </void>
        <void property="name">
         <string>hikeb</string>
@@ -2125,7 +2125,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>hike along the edge of the cliff towards the</string>
+        <string>hike along the edge of the cliff towards the jerseybowl</string>
        </void>
        <void property="name">
         <string>cliffarea</string>
@@ -2166,7 +2166,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto</string>
+        <string>take a right onto ridgerunner.</string>
        </void>
        <void property="name">
         <string>ridgerunner</string>
@@ -2182,7 +2182,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>go straight and then keep right onto</string>
+        <string>go straight and then keep right onto rock&apos;n&apos;roll.</string>
        </void>
        <void property="name">
         <string>rock&apos;n&apos;roll</string>
@@ -2198,7 +2198,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>go stright and then keep left onto</string>
+        <string>go stright and then keep left onto trapline</string>
        </void>
        <void property="name">
         <string>trapline</string>
@@ -2214,7 +2214,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take a slight left onto</string>
+        <string>take a slight left onto straightshot</string>
        </void>
        <void property="name">
         <string>straightshot</string>
@@ -2230,7 +2230,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take a left and then a right onto</string>
+        <string>take a left and then a right onto overbite</string>
        </void>
        <void property="name">
         <string>overbite</string>
@@ -2246,7 +2246,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a slight right onto</string>
+        <string>take a slight right onto crystalroad</string>
        </void>
        <void property="name">
         <string>crystalroad</string>
@@ -2284,7 +2284,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>choose one of three black routes down. the bite, staircase, or</string>
+        <string>choose one of three black routes down. the bite, staircase, or blowdown.</string>
        </void>
        <void property="name">
         <string>staircase</string>
@@ -2322,7 +2322,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto last</string>
+        <string>take a right onto last resort.</string>
        </void>
        <void property="name">
         <string>lastresort</string>
@@ -2338,7 +2338,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue left onto</string>
+        <string>continue left onto expressway.</string>
        </void>
        <void property="name">
         <string>expressway</string>
@@ -2354,7 +2354,7 @@
         <double>3.0</double>
        </void>
        <void property="directions">
-        <string>take one of four black paths that branch off of expressway to the right. they are raptor&apos;sride, where&apos;sjoe, watchout, and</string>
+        <string>take one of four black paths that branch off of expressway to the right. they are raptor&apos;sride, where&apos;sjoe, watchout, and yardsale.</string>
        </void>
        <void property="name">
         <string>watchout</string>
@@ -2392,7 +2392,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue onto</string>
+        <string>continue onto glacierroad</string>
        </void>
        <void property="name">
         <string>glacierroad</string>
@@ -2427,7 +2427,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the crystalridgeexpress</string>
+        <string>take the crystalridgeexpress up</string>
        </void>
        <void property="name">
         <string>crystalridgeexpress</string>
@@ -2443,7 +2443,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue onto</string>
+        <string>continue onto glacierroad</string>
        </void>
        <void property="name">
         <string>glacierroad</string>
@@ -2481,7 +2481,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue onto</string>
+        <string>continue onto glacierroad</string>
        </void>
        <void property="name">
         <string>glacierroad</string>
@@ -2519,7 +2519,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto greenline</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -2535,7 +2535,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue straight down on</string>
+        <string>continue straight down on espresso</string>
        </void>
        <void property="name">
         <string>espresso</string>
@@ -2551,7 +2551,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>continue left on</string>
+        <string>continue left on greenline</string>
        </void>
        <void property="name">
         <string>espgreen</string>
@@ -2586,7 +2586,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the blackcomb gondola to christine&apos;s</string>
+        <string>take the blackcomb gondola to christine&apos;s rendevous</string>
        </void>
        <void property="name">
         <string>blackcombgondola</string>
@@ -2599,7 +2599,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the magic chair up the</string>
+        <string>take the magic chair up the hill</string>
        </void>
        <void property="name">
         <string>magicchair</string>
@@ -2640,7 +2640,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto</string>
+        <string>take a right onto sideline</string>
        </void>
        <void property="name">
         <string>sideline</string>
@@ -2656,7 +2656,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto villagerun</string>
        </void>
        <void property="name">
         <string>villagerun</string>
@@ -2694,7 +2694,7 @@
         <double>1.0</double>
        </void>
        <void property="directions">
-        <string>take a right onto</string>
+        <string>take a right onto greenline</string>
        </void>
        <void property="name">
         <string>greenline</string>
@@ -2710,7 +2710,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take a left onto</string>
+        <string>take a left onto shorthorn</string>
        </void>
        <void property="name">
         <string>shorthorn</string>
@@ -2723,7 +2723,7 @@
      <void method="add">
       <object class="MapEdge">
        <void property="directions">
-        <string>take the excelerator chair</string>
+        <string>take the excelerator chair up</string>
        </void>
        <void property="name">
         <string>exceleratorchair</string>
@@ -2761,7 +2761,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>continue onto</string>
+        <string>continue onto glacierroad</string>
        </void>
        <void property="name">
         <string>glacierroad</string>
@@ -2799,7 +2799,7 @@
         <double>2.0</double>
        </void>
        <void property="directions">
-        <string>take showcase down the</string>
+        <string>take showcase down the mountain</string>
        </void>
        <void property="name">
         <string>showcase</string>
