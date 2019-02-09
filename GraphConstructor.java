@@ -22,7 +22,7 @@ public class GraphConstructor {
 			nodes = new HashMap<>();
 		}
 
-		//Scanner textScanner = new Scanner(System.in); // used for console
+		// Scanner textScanner = new Scanner(System.in); // used for console
 		// input
 
 		File file = new File("MapData.txt");

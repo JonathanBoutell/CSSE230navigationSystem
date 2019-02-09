@@ -2,7 +2,7 @@
 <java version="1.8.0_141" class="java.beans.XMLDecoder">
  <object class="java.util.HashMap">
   <void method="put">
-   <string>blueline2</string>
+   <string>blueline0</string>
    <object class="MapNode" id="MapNode0">
     <void property="drawX">
      <double>1041.0</double>
