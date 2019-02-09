@@ -52,13 +52,14 @@ public class PathFinder {
 			while (!queue.isEmpty()) {
 				// process the next node from the queue
 				MapNode current = queue.poll();
+				if(closedNodes.contains(current)) continue;
 				current.updateDestination(this.map.get(end));
 				// if the current node is the destination, reconstruct the path
 				// and return
 				if (current.findHeuristicDistance() == 0)
 					return reconstructPath(map.get(start), current, previousEdge, previousNode);
 				for (MapEdge e : current.getEdges()) {
-					if (e.getDifficulty() <= maxDifficulty && (allowSkiLift || e.getDifficulty() > 0)) {
+					if ((e.getDifficulty() <= maxDifficulty && e.getDifficulty() > 0) || (allowSkiLift && e.getDifficulty() == 0)) {
 						MapNode next = map.get(e.getNextNode());
 						if (!closedNodes.contains(next)) {
 							next.updateDestination(map.get(end));
@@ -66,6 +67,9 @@ public class PathFinder {
 									+ next.findHeuristicDistance();
 							if (!openNodes.containsKey(next)) {
 								openNodes.put(next, dist);
+								if(queue.contains(next)){
+									queue.remove(next);
+								}
 								queue.offer(next);
 								previousNode.put(next, current);
 								previousEdge.put(next, e);
@@ -76,6 +80,9 @@ public class PathFinder {
 										previousEdge.put(next, e);
 										previousNode.put(next, current);
 										openNodes.put(next, dist);
+										if(queue.contains(next)){
+											queue.remove(next);
+										}
 										queue.add(next);
 									}
 								} else {
@@ -83,6 +90,9 @@ public class PathFinder {
 										previousEdge.put(next, e);
 										previousNode.put(next, current);
 										openNodes.put(current, dist);
+										if(queue.contains(next)){
+											queue.remove(next);
+										}
 										queue.add(next);
 									}
 								}
@@ -129,6 +139,7 @@ public class PathFinder {
 					openNodes.add(next);
 					traveledEdge.put(next, edge);
 					previousNode.put(next, current);
+					queue.offer(next);
 				}
 			}
 			closedNodes.add(current);

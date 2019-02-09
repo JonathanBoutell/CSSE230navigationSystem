@@ -106,7 +106,7 @@ public class Path implements Drawable {
 		MapEdge edge = this.map.get(this.startNode);
 		for (int i = 0; i < this.map.size(); i++) {
 			str += "=>" + edge.nextNode;
-			edge = this.map.get(edge.nextNode);
+			edge = this.map.get(this.nodes.get(edge.nextNode));
 		}
 		str += "}";
 		return str;
