@@ -20,6 +20,7 @@ public class MapFrame {
 	public MapFrame() {
 		try {pathFinder = new PathFinder();} catch (FileNotFoundException e) {}
 		
+		mapComponent.addNodeList(pathFinder.getAllNodes());
 		JFrame frame = new JFrame();
 		frame.setTitle("Navigation System");
 		JPanel holder = new JPanel(new BorderLayout());

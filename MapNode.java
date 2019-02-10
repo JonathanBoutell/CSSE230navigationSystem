@@ -2,8 +2,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 
-
-
 public class MapNode implements Comparable<MapNode>, Drawable{
 	String name;
 	double longitude;
@@ -33,7 +31,14 @@ public class MapNode implements Comparable<MapNode>, Drawable{
 	}
 	
 	private void draw(Graphics g, Color c) {
-		// TODO Implement Drawing
+		g.setColor(c);
+		g.fillOval((int)getDrawX() - Main.NODE_DIAMETER / 2, (int)getDrawY() - Main.NODE_DIAMETER / 2,
+				Main.NODE_DIAMETER, Main.NODE_DIAMETER);
+		if(hasFirstAid) {
+			g.setColor(Color.RED);
+			g.fillOval((int)getDrawX() - Main.NODE_DIAMETER / 4, (int)getDrawY() - Main.NODE_DIAMETER / 4,
+					Main.NODE_DIAMETER / 2, Main.NODE_DIAMETER / 2);
+		}
 	}
 
 	public MapNode() {
@@ -103,11 +108,11 @@ public class MapNode implements Comparable<MapNode>, Drawable{
 	}
 
 	public double getDrawX() {
-		return this.drawX;
+		return this.drawX * Main.SCALE_FACTOR;
 	}
 
 	public double getDrawY() {
-		return this.drawY;
+		return (this.drawY - Main.VERTICAL_OFFSET) * Main.SCALE_FACTOR;
 	}
 
 	public boolean getFirstAid() {

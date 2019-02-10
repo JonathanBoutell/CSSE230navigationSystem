@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,22 +52,18 @@ public class Path implements Drawable {
 
 	@Override
 	public void draw(Graphics g) {
-		startNode.draw(g);
-		for (MapEdge edge : map.values()) {
-			edge.draw(g);
-			nodes.get(edge.getNextNode()).draw(g);
-		}
-	}
-
-	@Override
-	public void highlight(Graphics g) {
 		startNode.highlight(g);
 		for (MapEdge edge : map.values()) {
-			edge.highlight(g);
+			drawEdge(g, startNode, nodes.get(edge.getNextNode()));
 			nodes.get(edge.getNextNode()).highlight(g);
 		}
 	}
 
+	private void drawEdge(Graphics g, MapNode startNode, MapNode endNode) {
+		g.setColor(Color.YELLOW);
+		g.drawLine((int)startNode.getDrawX(), (int)startNode.getDrawY(), (int)endNode.getDrawX(), (int)endNode.getDrawY());
+	}
+	
 	public ArrayList<String> generateDirections() {
 		ArrayList<String> directions = new ArrayList<String>();
 		MapNode currentNode = startNode;

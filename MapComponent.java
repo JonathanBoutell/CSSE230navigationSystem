@@ -4,6 +4,7 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -13,6 +14,7 @@ public class MapComponent extends JComponent {
 	
 	Image trailImage;
 	Path drawPath;
+	ArrayList<MapNode> list;
 	
 	public MapComponent(){
 		this.drawPath = null;
@@ -31,11 +33,21 @@ public class MapComponent extends JComponent {
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
 		g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
+		if(list != null) drawNodes(g2);
 		if (drawPath != null) drawPath.draw(g2);
 	}
 
+	public void addNodeList(ArrayList<MapNode> list) {
+		this.list = list;
+	}
+	
 	public void setPath(Path drawPath) {
 		this.drawPath = drawPath;
 	}
 	
+	private void drawNodes(Graphics g) {
+		for(MapNode node : list) {
+			node.draw(g);
+		}
+	}
 }
