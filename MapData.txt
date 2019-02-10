@@ -163,5 +163,5 @@ Edge: Hugh'sHeaven CrystalTraverse1 Hugh'sHeaven0 2 Take a left onto Hugh'sHeave
 Edge: UpperCloudNine CrystalTraverse1 SunsetBLV1 2 Take a left onto UpperCloudNine
 Edge: HikeB CrystalTraverse1 LakesideBowl 0 Hike along the edge of the mountain towards the LakesideBowl
 Edge: CliffArea CrystalTraverse1 JerseyBowl 0 Hike along the edge of the cliff towards the JerseyBowl
-Node: LakesideBowl 083433 878469 5534 3734 0
+Node: LakesideBowl 083433 878469 1522 1208 0
 Edge: Xiggy'sMeadow LakesideBowl Sluiceway 3 Take Xiggy'sMeadow Down the mountain

@@ -52,10 +52,15 @@ public class Path implements Drawable {
 
 	@Override
 	public void draw(Graphics g) {
-		startNode.highlight(g);
-		for (MapEdge edge : map.values()) {
-			drawEdge(g, startNode, nodes.get(edge.getNextNode()));
-			nodes.get(edge.getNextNode()).highlight(g);
+		MapNode currentNode = startNode;
+		MapEdge currentEdge;
+		MapNode nextNode;
+		while (map.containsKey(currentNode)) {
+			currentNode.highlight(g);
+			currentEdge = map.get(currentNode);
+			nextNode = nodes.get(currentEdge.getNextNode());
+			drawEdge(g, currentNode, nextNode);
+			currentNode = nextNode;
 		}
 	}
 
