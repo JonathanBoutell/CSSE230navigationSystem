@@ -15,7 +15,7 @@ Edge: Connector EasyOut1 EasyOut0 2 Take a right onto the Connector, then merge 
 Node: EasyOut0 102650 921724 1884 2329 0
 Edge: LowerGearJammer EasyOut0 SideLine 2 Take a left onto LowerGearJammer
 Edge: EasyOut EasyOut0 GreenLine2 1 Continue right on LastResort
-Node: GreenLine2 106403 920761 1740 2918 0
+Node: GreenLine2 106403 920761 1712 2471 0
 Edge: GreenLine GreenLine2 ExcaliburGondola 1 Take a right onto Greenline towards the Excalibur Gondola
 Edge: UpperMainLine GreenLine2 GreenLine0 2 Take a left onto UpperMainLine
 Edge: Grubstake GreenLine2 GreenLine1 2 Take the second left onto Grubsteak
@@ -107,7 +107,7 @@ Node: Hugh'sHeaven0 085816 888259 1667 1409 0
 Edge: Hugh'sHeaven Hugh'sHeaven0 SunsetBLV1 2 Keep to the left on Hugh's Heaven.
 Edge: AngelDust Hugh'sHeaven0 SunsetBLV1 3 Keep to the left then make a right onto AngelDust.
 Edge: Everglades Hugh'sHeaven0 7thAve1 3 Take a left onto Everglades.
-Node: BlueLine1 951 1713 104451 893684 0
+Node: BlueLine1 104451 893684 951 1713 0
 Edge: GlacierDrive BlueLine1 GreenLine6 3 Take a left onto Glacier Drive
 Edge: BlueLine BLueline1 BlueLine0 2 Continue to the right on Blueline
 Node: CrystalRoad0 640 1838 112054 897599 0
@@ -115,7 +115,7 @@ Edge: CrystalRoad CrystalRoad0 GreenLine6 1 Continue to the left on GreenLine
 Edge: Rock'N'Roll CrystalRoad0 GlacierRoad1 2 Take the second right down the mountain onto Rock'N'Roll
 Edge: BackStagePass CrystalRoad0 GlacierRoad2 2 Take the first right down the mountain onto BackStagePass
 Edge: Rider'sRevenge CrystalRoad0 InTheSpirit 3 Take the third right down the mountain onto Rider'sRevenge
-Node: CrystalRoad1 459 1754 112497 893499 0
+Node: CrystalRoad1 112497 893499 459 1754  0
 Edge: OuterLimits CrystalRoad1 GlacierRoad3 4 Take a right turn down OuterLimits
 Edge: Aurthur'sChoice CrystalRoad1 GlacierRoad3 3 Take a right then immediately left down Aurthur'sChoice
 Edge: TwistShout CrystalRoad1 GlacierRoad3 2 Go slightly right down Twist and Shout

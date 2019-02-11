@@ -1,5 +1,8 @@
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Line2D;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -56,17 +59,19 @@ public class Path implements Drawable {
 		MapEdge currentEdge;
 		MapNode nextNode;
 		while (map.containsKey(currentNode)) {
-			currentNode.highlight(g);
 			currentEdge = map.get(currentNode);
 			nextNode = nodes.get(currentEdge.getNextNode());
 			drawEdge(g, currentNode, nextNode);
+			currentNode.highlight(g);
 			currentNode = nextNode;
 		}
 	}
 
 	private void drawEdge(Graphics g, MapNode startNode, MapNode endNode) {
 		g.setColor(Color.YELLOW);
-		g.drawLine((int)startNode.getDrawX(), (int)startNode.getDrawY(), (int)endNode.getDrawX(), (int)endNode.getDrawY());
+		Graphics2D g2 = (Graphics2D) g;
+		g2.setStroke(new BasicStroke(Main.EDGE_THICKNESS));
+		g2.drawLine(startNode.getDrawingX(), startNode.getDrawingY(), endNode.getDrawingX(), endNode.getDrawingY());
 	}
 	
 	public ArrayList<String> generateDirections() {
