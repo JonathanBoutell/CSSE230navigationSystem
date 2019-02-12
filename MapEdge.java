@@ -59,6 +59,7 @@ public class MapEdge {
 
 	public void setDifficulty(double diff) {
 		this.difficulty = diff;
+		findColor();
 	}
 
 	public void setDirections(String direc) {

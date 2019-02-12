@@ -6,6 +6,7 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 
 import javax.imageio.ImageIO;
@@ -17,7 +18,7 @@ public class MapComponent extends JComponent {
 	Image trailImage;
 	Path drawPath;
 	Boolean mapMode;
-	ArrayList<MapNode> list;
+	Collection<MapNode> list;
 	HashMap<String, MapNode> map;
 	
 	public MapComponent(){
@@ -51,8 +52,9 @@ public class MapComponent extends JComponent {
 		return this.mapMode;
 	}
 	
-	public void addNodeList(ArrayList<MapNode> list) {
-		this.list = list;
+	public void addMap(HashMap<String, MapNode> map) {
+		this.map = map;
+		this.list = map.values();
 	}
 	
 	public void setPath(Path drawPath) {
@@ -76,6 +78,7 @@ public class MapComponent extends JComponent {
 				endNode = map.get(edge.getNextNode());
 				g2.setColor(edge.color);
 				g2.drawLine(node.getDrawingX() + i, node.getDrawingY(), endNode.getDrawingX() + i, endNode.getDrawingY());
+				i += Main.EDGE_THICKNESS;
 			}
 		}
 	}

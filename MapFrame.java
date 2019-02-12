@@ -22,7 +22,8 @@ public class MapFrame {
 	public MapFrame() {
 		// initialize the frame, panels, and nodes
 		try {pathFinder = new PathFinder();} catch (FileNotFoundException e) {}
-		mapComponent.addNodeList(pathFinder.getAllNodes());
+		mapComponent.addMap(pathFinder.getNodes());
+		
 		JFrame frame = new JFrame();
 		frame.setTitle("Navigation System");
 		JPanel holder = new JPanel(new BorderLayout());
@@ -58,7 +59,8 @@ public class MapFrame {
 					mapComponent.setMapMode(false);
 				} else {
 					mapComponent.setMapMode(true);
-				}		
+				}
+				mapComponent.repaint();
 			}
 		});
 		
