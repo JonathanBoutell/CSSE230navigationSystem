@@ -1,4 +1,8 @@
+import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Line2D;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -51,22 +55,25 @@ public class Path implements Drawable {
 
 	@Override
 	public void draw(Graphics g) {
-		startNode.draw(g);
-		for (MapEdge edge : map.values()) {
-			edge.draw(g);
-			nodes.get(edge.getNextNode()).draw(g);
+		MapNode currentNode = startNode;
+		MapEdge currentEdge;
+		MapNode nextNode;
+		while (map.containsKey(currentNode)) {
+			currentEdge = map.get(currentNode);
+			nextNode = nodes.get(currentEdge.getNextNode());
+			drawEdge(g, currentNode, nextNode);
+			currentNode.highlight(g);
+			currentNode = nextNode;
 		}
 	}
 
-	@Override
-	public void highlight(Graphics g) {
-		startNode.highlight(g);
-		for (MapEdge edge : map.values()) {
-			edge.highlight(g);
-			nodes.get(edge.getNextNode()).highlight(g);
-		}
+	private void drawEdge(Graphics g, MapNode startNode, MapNode endNode) {
+		g.setColor(Color.YELLOW);
+		Graphics2D g2 = (Graphics2D) g;
+		g2.setStroke(new BasicStroke(Main.EDGE_THICKNESS));
+		g2.drawLine(startNode.getDrawingX(), startNode.getDrawingY(), endNode.getDrawingX(), endNode.getDrawingY());
 	}
-
+	
 	public ArrayList<String> generateDirections() {
 		ArrayList<String> directions = new ArrayList<String>();
 		MapNode currentNode = startNode;

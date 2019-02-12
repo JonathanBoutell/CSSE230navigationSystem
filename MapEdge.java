@@ -1,8 +1,7 @@
 import java.awt.Color;
-import java.awt.Graphics;
 import java.util.Arrays;
 
-public class MapEdge implements Drawable{
+public class MapEdge {
 	String nextNode;
 	String name;
 	double difficulty;
@@ -32,18 +31,6 @@ public class MapEdge implements Drawable{
 		this.difficulty = difficulty;
 		this.directions = directions;
 		findColor();
-	}
-	
-	public void draw(Graphics g) {
-		draw(g, color);
-	}
-	
-	public void highlight(Graphics g) {
-		draw(g, Color.YELLOW);
-	}
-	
-	private void draw(Graphics g, Color c) {
-		// TODO Implement Drawing
 	}
 
 	public String getName() {

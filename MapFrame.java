@@ -3,6 +3,8 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
@@ -18,8 +20,9 @@ public class MapFrame {
 	MapComponent mapComponent = new MapComponent();
 	
 	public MapFrame() {
+		// initialize the frame, panels, and nodes
 		try {pathFinder = new PathFinder();} catch (FileNotFoundException e) {}
-		
+		mapComponent.addNodeList(pathFinder.getAllNodes());
 		JFrame frame = new JFrame();
 		frame.setTitle("Navigation System");
 		JPanel holder = new JPanel(new BorderLayout());
@@ -29,13 +32,14 @@ public class MapFrame {
 		for (String key : pathFinder.getNodes().keySet()) {
 			temp.add(key);
 		}
+		temp.add("");
 		Object[] mapNodes = temp.toArray();
 		
+		//initialize all buttons
 		JComboBox startTextField = new JComboBox(mapNodes);
+		startTextField.setSelectedItem("");
 		JComboBox endTextField = new JComboBox(mapNodes);
-		
-//		JTextField startTextField = new JTextField(30);
-//		JTextField endTextField = new JTextField(30);
+		endTextField.setSelectedItem("");
 		String[] distOptionStrs = {"Minimize", "Maximize"};
 		String[] diffOptionStrs = {"Green", "Blue", "Black", "Double Black"};
 		JComboBox distanceOptions = new JComboBox(distOptionStrs);
@@ -46,12 +50,38 @@ public class MapFrame {
 		JCheckBox skiLiftSelect = new JCheckBox("Do Not Allow Ski Lifts");
 		JButton getDirectionsButton = new JButton("Get Directions");
 		getDirectionsButton.addActionListener(new DirectionsListener(startTextField,endTextField,distanceOptions,difficultyOptions,firstAidSelect,skiLiftSelect));
+		mapComponent.addMouseListener(new MouseListener() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				double x = e.getX()/Main.SCALE_FACTOR;
+				double y = e.getY()/Main.SCALE_FACTOR + 700;
+				double closestDist = Integer.MAX_VALUE;
+				MapNode node = null;
+				for (MapNode n : pathFinder.getAllNodes()) {
+					double dist = Math.sqrt(Math.pow(n.getDrawX()-x, 2) + Math.pow(n.getDrawY()-y, 2));
+					if (dist < closestDist){
+						closestDist = dist;
+						node = n;
+					}
+				}
+				if (startTextField.getSelectedItem() == "") {
+					startTextField.setSelectedItem(node.getName());
+				} else {
+					endTextField.setSelectedItem(node.getName());
+				}
+			}
+			public void mouseEntered(MouseEvent e) {}
+			public void mouseExited(MouseEvent e) {}
+			public void mousePressed(MouseEvent e) {}
+			public void mouseReleased(MouseEvent e) {}
+		});
 		
 		holder.setBackground(new Color(200,229,255));
 		selectionPanel.setBackground(new Color(200,229,255));
 		firstAidSelect.setBackground(new Color(200,229,255));
 		skiLiftSelect.setBackground(new Color(200,229,255));
 		
+		//add buttons and labels
 		selectionPanel.add(new JLabel("Start Point"));
 		selectionPanel.add(new JLabel("End Point"));
 		selectionPanel.add(new JLabel("Minimize or Maximize Distance"));
@@ -66,6 +96,7 @@ public class MapFrame {
 		selectionPanel.add(skiLiftSelect);
 		selectionPanel.add(getDirectionsButton);
 		
+		//add everything to the frame and make it visible
 		frame.add(holder);
 		holder.add(mapComponent,BorderLayout.CENTER);
 		mapComponent.repaint();
@@ -101,7 +132,7 @@ public class MapFrame {
 				path = pathFinder.findNearestFirstAidStation(start);
 			} else {
 				boolean allowSkiLift = !skiLiftSelect.isSelected();
-				boolean findMaxDistance = (distanceOptions.equals("Minimize"))?false:true;
+				boolean findMaxDistance = (distanceOptions.getSelectedItem().equals("Minimize"))?false:true;
 				double maxDifficulty = 0;
 				switch (difficultyOptions.getSelectedItem().toString()) {
 				case "Green":
@@ -124,6 +155,5 @@ public class MapFrame {
 			mapComponent.repaint();
 			new DirectionsFrame(path).display();
 		}
-		
 	}
 }
