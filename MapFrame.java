@@ -53,6 +53,7 @@ public class MapFrame {
 		mapComponent.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				// find the closest node to the mouse click and select it as the start or end point
 				double x = e.getX()/Main.SCALE_FACTOR;
 				double y = e.getY()/Main.SCALE_FACTOR + 700;
 				double closestDist = Integer.MAX_VALUE;
