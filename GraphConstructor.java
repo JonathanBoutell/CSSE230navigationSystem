@@ -71,7 +71,6 @@ public class GraphConstructor {
 				System.out.println("invalid format\n" + nodeHelp + '\n' + edgeHelp);
 				return;
 			}
-			System.out.println(map);
 			map.get(line[2]).addEdge(new MapEdge(line));
 
 		} else if (line[0].equals("write")) {
