@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_131" class="java.beans.XMLDecoder">
+<java version="1.8.0_181" class="java.beans.XMLDecoder">
  <object class="java.util.HashMap">
   <void method="put">
    <string>blueline2</string>
@@ -927,10 +927,10 @@
    <string>crystalroad1</string>
    <object class="MapNode" id="MapNode16">
     <void property="drawX">
-     <double>112497.0</double>
+     <double>459.0</double>
     </void>
     <void property="drawY">
-     <double>893499.0</double>
+     <double>1754.0</double>
     </void>
     <void property="edges">
      <void method="add">
@@ -1013,92 +1013,12 @@
        </void>
       </object>
      </void>
-     <void method="add">
-      <object class="MapEdge">
-       <void property="difficulty">
-        <double>4.0</double>
-       </void>
-       <void property="directions">
-        <string>take a right turn down outerlimits</string>
-       </void>
-       <void property="name">
-        <string>outerlimits</string>
-       </void>
-       <void property="nextNode">
-        <string>glacierroad3</string>
-       </void>
-      </object>
-     </void>
-     <void method="add">
-      <object class="MapEdge">
-       <void property="difficulty">
-        <double>3.0</double>
-       </void>
-       <void property="directions">
-        <string>take a right then immediately left down aurthur&apos;schoice</string>
-       </void>
-       <void property="name">
-        <string>aurthur&apos;schoice</string>
-       </void>
-       <void property="nextNode">
-        <string>glacierroad3</string>
-       </void>
-      </object>
-     </void>
-     <void method="add">
-      <object class="MapEdge">
-       <void property="difficulty">
-        <double>2.0</double>
-       </void>
-       <void property="directions">
-        <string>go slightly right down twist and shout</string>
-       </void>
-       <void property="name">
-        <string>twistshout</string>
-       </void>
-       <void property="nextNode">
-        <string>glacierroad3</string>
-       </void>
-      </object>
-     </void>
-     <void method="add">
-      <object class="MapEdge">
-       <void property="difficulty">
-        <double>2.0</double>
-       </void>
-       <void property="directions">
-        <string>go straight down on ridgerunner</string>
-       </void>
-       <void property="name">
-        <string>ridgerunner</string>
-       </void>
-       <void property="nextNode">
-        <string>glacierroad2</string>
-       </void>
-      </object>
-     </void>
-     <void method="add">
-      <object class="MapEdge">
-       <void property="difficulty">
-        <double>1.0</double>
-       </void>
-       <void property="directions">
-        <string>keep to the left to stay on crystal road</string>
-       </void>
-       <void property="name">
-        <string>crystalroad</string>
-       </void>
-       <void property="nextNode">
-        <string>crystalroad0</string>
-       </void>
-      </object>
-     </void>
     </void>
     <void property="latitude">
-     <double>1754.0</double>
+     <double>893499.0</double>
     </void>
     <void property="longitude">
-     <double>459.0</double>
+     <double>112497.0</double>
     </void>
     <void property="name">
      <string>crystalroad1</string>
@@ -1217,10 +1137,10 @@
    <string>crystalroad0</string>
    <object class="MapNode" id="MapNode19">
     <void property="drawX">
-     <double>112054.0</double>
+     <double>640.0</double>
     </void>
     <void property="drawY">
-     <double>897599.0</double>
+     <double>1838.0</double>
     </void>
     <void property="edges">
      <void method="add">
@@ -1289,10 +1209,10 @@
      </void>
     </void>
     <void property="latitude">
-     <double>1838.0</double>
+     <double>897599.0</double>
     </void>
     <void property="longitude">
-     <double>640.0</double>
+     <double>112054.0</double>
     </void>
     <void property="name">
      <string>crystalroad0</string>
