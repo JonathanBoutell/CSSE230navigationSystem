@@ -37,7 +37,7 @@ public class MapComponent extends JComponent {
 	protected void paintComponent(Graphics g){
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
-		g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
+		if(mapMode) g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
 		if(list != null) drawNodes(g2);
 		if(list != null && map != null && !mapMode) drawEdges(g2);
 		if (drawPath != null) drawPath.draw(g2);
@@ -45,6 +45,10 @@ public class MapComponent extends JComponent {
 
 	public void setMapMode(Boolean mode) {
 		this.mapMode = mode;
+	}
+	
+	public Boolean getMapMode() {
+		return this.mapMode;
 	}
 	
 	public void addNodeList(ArrayList<MapNode> list) {
