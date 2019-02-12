@@ -12,11 +12,21 @@ public class Path implements Drawable {
 	private HashMap<MapNode, MapEdge> map;
 	private HashMap<String, MapNode> nodes;
 	private MapNode startNode;
+	private boolean firstAid;
 
-	public Path(HashMap<MapNode, MapEdge> map, HashMap<String, MapNode> nodes, MapNode startNode) {
+	public Path(HashMap<MapNode, MapEdge> map, HashMap<String, MapNode> nodes, MapNode startNode, boolean firstAid) {
 		this.map = map;
 		this.nodes = nodes;
 		this.startNode = startNode;
+		this.firstAid = firstAid;
+	}
+	
+	public boolean firstAid() {
+		return this.firstAid;
+	}
+	
+	public boolean isEmpty() {
+		return map.isEmpty();
 	}
 
 	public double getAverageDifficulty() {

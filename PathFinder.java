@@ -57,7 +57,7 @@ public class PathFinder {
 				// if the current node is the destination, reconstruct the path
 				// and return
 				if (current.findHeuristicDistance() == 0)
-					return reconstructPath(map.get(start), current, previousEdge, previousNode);
+					return reconstructPath(map.get(start), current, previousEdge, previousNode, false);
 				for (MapEdge e : current.getEdges()) {
 					if ((e.getDifficulty() <= maxDifficulty && e.getDifficulty() > 0) || (allowSkiLift && e.getDifficulty() == 0)) {
 						MapNode next = map.get(e.getNextNode());
@@ -109,7 +109,7 @@ public class PathFinder {
 	}
 
 	private Path reconstructPath(MapNode start, MapNode current, HashMap<MapNode, MapEdge> previousEdges,
-			HashMap<MapNode, MapNode> previousNodes) {
+			HashMap<MapNode, MapNode> previousNodes, boolean firstAid) {
 		HashMap<MapNode, MapEdge> path = new HashMap<MapNode, MapEdge>();
 		while (current.distanceBetween(start) != 0) {
 			MapNode previousNode = previousNodes.get(current);
@@ -117,7 +117,7 @@ public class PathFinder {
 			path.put(previousNode, edge);
 			current = previousNode;
 		}
-		return new Path(path, this.map, start);
+		return new Path(path, this.map, start, firstAid);
 	}
 
 	public Path findNearestFirstAidStation(String start) {
@@ -131,7 +131,7 @@ public class PathFinder {
 		while (!queue.isEmpty()) {
 			current = queue.poll();
 			if(current.hasFirstAid){
-				return this.reconstructPath(this.map.get(start), current, traveledEdge, previousNode);
+				return this.reconstructPath(this.map.get(start), current, traveledEdge, previousNode, true);
 			}
 			for (MapEdge edge : current.getEdges()) {
 				MapNode next = this.map.get(edge.nextNode);

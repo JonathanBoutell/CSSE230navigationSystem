@@ -47,7 +47,7 @@ public class PathFinderTest {
 					break;
 				}
 			}
-			Path path = new Path(edges, test.getNodes(), greenLine);
+			Path path = new Path(edges, test.getNodes(), greenLine, false);
 			assertEquals(path, test.runAStar(false, true, "greenline5", "greenline3", 4));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
@@ -72,7 +72,7 @@ public class PathFinderTest {
 				}
 				
 			}
-			Path path = new Path(edges, test.getNodes(), nodes.get("greenline5"));
+			Path path = new Path(edges, test.getNodes(), nodes.get("greenline5"), false);
 			assertEquals(path, test.runAStar(true, false, "greenline5", "basecamp1", 4));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
@@ -87,7 +87,7 @@ public class PathFinderTest {
 			HashMap<String, MapNode> nodes = test.getNodes();
 			MapNode node = nodes.get("christine's");
 
-			Path path = new Path(edges, test.getNodes(), node);
+			Path path = new Path(edges, test.getNodes(), node, true);
 			assertEquals(path, test.findNearestFirstAidStation("christine's"));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
@@ -113,7 +113,7 @@ public class PathFinderTest {
 				
 			}
 
-			Path path = new Path(edges, test.getNodes(), nodes.get("greenline1"));
+			Path path = new Path(edges, test.getNodes(), nodes.get("greenline1"), true);
 			assertEquals(path, test.findNearestFirstAidStation("greenline1"));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
@@ -134,7 +134,7 @@ public class PathFinderTest {
 				}
 			}
 			
-			Path path = new Path(edges, test.getNodes(), node);
+			Path path = new Path(edges, test.getNodes(), node, false);
 			assertEquals(path, test.runAStar(false, true, "basecamp1", "christine's", 4));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
@@ -161,7 +161,7 @@ public class PathFinderTest {
 			}
 
 			
-			Path path = new Path(edges, test.getNodes(), nodes.get("christine's"));
+			Path path = new Path(edges, test.getNodes(), nodes.get("christine's"), false);
 			assertEquals(path, test.runAStar(false, true, "christine's", "easyout2", 2));
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
