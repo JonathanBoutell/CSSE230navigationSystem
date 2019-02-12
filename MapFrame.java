@@ -36,16 +36,16 @@ public class MapFrame {
 		Object[] mapNodes = temp.toArray();
 		
 		//initialize all buttons
-		JComboBox startTextField = new JComboBox(mapNodes);
+		final JComboBox startTextField = new JComboBox(mapNodes);
 		startTextField.setSelectedItem("");
-		JComboBox endTextField = new JComboBox(mapNodes);
+		final JComboBox endTextField = new JComboBox(mapNodes);
 		endTextField.setSelectedItem("");
 		String[] distOptionStrs = {"Minimize", "Maximize"};
 		String[] diffOptionStrs = {"Green", "Blue", "Black", "Double Black"};
 		JComboBox distanceOptions = new JComboBox(distOptionStrs);
 		JComboBox difficultyOptions = new JComboBox(diffOptionStrs);
 		distanceOptions.setSelectedIndex(0);
-		difficultyOptions.setSelectedIndex(1);
+		difficultyOptions.setSelectedIndex(3);
 		JCheckBox firstAidSelect = new JCheckBox("Find Nearest First Aid Station");
 		JCheckBox skiLiftSelect = new JCheckBox("Do Not Allow Ski Lifts");
 		JButton getDirectionsButton = new JButton("Get Directions");
@@ -65,7 +65,7 @@ public class MapFrame {
 						node = n;
 					}
 				}
-				if (startTextField.getSelectedItem() == "") {
+				if (startTextField.getSelectedItem().equals("")) {
 					startTextField.setSelectedItem(node.getName());
 				} else {
 					endTextField.setSelectedItem(node.getName());
