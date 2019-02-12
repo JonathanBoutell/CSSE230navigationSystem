@@ -15,8 +15,10 @@ public class MapComponent extends JComponent {
 	Image trailImage;
 	Path drawPath;
 	ArrayList<MapNode> list;
+	private boolean showsMap;
 	
 	public MapComponent(){
+		showsMap = true;
 		this.drawPath = null;
 		try {
 			trailImage = ImageIO.read(getClass().getResource("trailsCropped.png"));
@@ -49,5 +51,17 @@ public class MapComponent extends JComponent {
 		for(MapNode node : list) {
 			node.draw(g);
 		}
+	}
+
+	public void hideMap() {
+		this.showsMap = false;
+	}
+
+	public void showMap() {
+		this.showsMap = true;
+	}
+
+	public boolean getShowsMap() {
+		return this.showsMap;
 	}
 }
