@@ -65,6 +65,7 @@ public class Path implements Drawable {
 			currentNode.highlight(g);
 			currentNode = nextNode;
 		}
+		currentNode.highlight(g);
 	}
 
 	private void drawEdge(Graphics g, MapNode startNode, MapNode endNode) {

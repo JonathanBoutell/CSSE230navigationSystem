@@ -115,7 +115,7 @@ Edge: CrystalRoad CrystalRoad0 GreenLine6 1 Continue to the left on GreenLine
 Edge: Rock'N'Roll CrystalRoad0 GlacierRoad1 2 Take the second right down the mountain onto Rock'N'Roll
 Edge: BackStagePass CrystalRoad0 GlacierRoad2 2 Take the first right down the mountain onto BackStagePass
 Edge: Rider'sRevenge CrystalRoad0 InTheSpirit 3 Take the third right down the mountain onto Rider'sRevenge
-Node: CrystalRoad1 112497 893499 459 1754  0
+Node: CrystalRoad1 459 1754 112497 893499  0
 Edge: OuterLimits CrystalRoad1 GlacierRoad3 4 Take a right turn down OuterLimits
 Edge: Aurthur'sChoice CrystalRoad1 GlacierRoad3 3 Take a right then immediately left down Aurthur'sChoice
 Edge: TwistShout CrystalRoad1 GlacierRoad3 2 Go slightly right down Twist and Shout
