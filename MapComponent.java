@@ -6,6 +6,7 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 
 import javax.imageio.ImageIO;
@@ -17,7 +18,7 @@ public class MapComponent extends JComponent {
 	Image trailImage;
 	Path drawPath;
 	Boolean mapMode;
-	ArrayList<MapNode> list;
+	Collection<MapNode> list;
 	HashMap<String, MapNode> map;
 	
 	public MapComponent(){
@@ -37,7 +38,7 @@ public class MapComponent extends JComponent {
 	protected void paintComponent(Graphics g){
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
-		g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
+		if(mapMode) g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
 		if(list != null) drawNodes(g2);
 		if(list != null && map != null && !mapMode) drawEdges(g2);
 		if (drawPath != null) drawPath.draw(g2);
@@ -47,8 +48,13 @@ public class MapComponent extends JComponent {
 		this.mapMode = mode;
 	}
 	
-	public void addNodeList(ArrayList<MapNode> list) {
-		this.list = list;
+	public Boolean getMapMode() {
+		return this.mapMode;
+	}
+	
+	public void addMap(HashMap<String, MapNode> map) {
+		this.map = map;
+		this.list = map.values();
 	}
 	
 	public void setPath(Path drawPath) {
@@ -72,6 +78,7 @@ public class MapComponent extends JComponent {
 				endNode = map.get(edge.getNextNode());
 				g2.setColor(edge.color);
 				g2.drawLine(node.getDrawingX() + i, node.getDrawingY(), endNode.getDrawingX() + i, endNode.getDrawingY());
+				i += Main.EDGE_THICKNESS;
 			}
 		}
 	}

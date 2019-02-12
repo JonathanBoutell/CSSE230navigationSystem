@@ -22,7 +22,8 @@ public class MapFrame {
 	public MapFrame() {
 		// initialize the frame, panels, and nodes
 		try {pathFinder = new PathFinder();} catch (FileNotFoundException e) {}
-		mapComponent.addNodeList(pathFinder.getAllNodes());
+		mapComponent.addMap(pathFinder.getNodes());
+		
 		JFrame frame = new JFrame();
 		frame.setTitle("Navigation System");
 		JPanel holder = new JPanel(new BorderLayout());
@@ -50,6 +51,19 @@ public class MapFrame {
 		JCheckBox skiLiftSelect = new JCheckBox("Do Not Allow Ski Lifts");
 		JButton getDirectionsButton = new JButton("Get Directions");
 		getDirectionsButton.addActionListener(new DirectionsListener(startTextField,endTextField,distanceOptions,difficultyOptions,firstAidSelect,skiLiftSelect));
+		JButton toggleBackground = new JButton("Toggle Map");
+		toggleBackground.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				if (mapComponent.getMapMode()) {
+					mapComponent.setMapMode(false);
+				} else {
+					mapComponent.setMapMode(true);
+				}
+				mapComponent.repaint();
+			}
+		});
+		
 		mapComponent.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -88,7 +102,7 @@ public class MapFrame {
 		selectionPanel.add(new JLabel("Minimize or Maximize Distance"));
 		selectionPanel.add(new JLabel("Maximum Allowable Difficulty"));
 		selectionPanel.add(firstAidSelect);
-		selectionPanel.add(new JLabel(""));
+		selectionPanel.add(toggleBackground);
 		
 		selectionPanel.add(startTextField);
 		selectionPanel.add(endTextField);
