@@ -18,14 +18,9 @@ public class MapComponent extends JComponent {
 	Path drawPath;
 	Boolean mapMode;
 	ArrayList<MapNode> list;
-<<<<<<< HEAD
-	private boolean showsMap;
-=======
 	HashMap<String, MapNode> map;
->>>>>>> branch 'master' of https://github.com/JonathanBoutell/CSSE230navigationSystem.git
 	
 	public MapComponent(){
-		showsMap = true;
 		this.drawPath = null;
 		this.mapMode = true;
 		try {
@@ -69,20 +64,6 @@ public class MapComponent extends JComponent {
 			node.draw(g);
 		}
 	}
-<<<<<<< HEAD
-
-	public void hideMap() {
-		this.showsMap = false;
-	}
-
-	public void showMap() {
-		this.showsMap = true;
-	}
-
-	public boolean getShowsMap() {
-		return this.showsMap;
-	}
-=======
 	
 	private void drawEdges(Graphics g) {
 		MapNode endNode;
@@ -99,5 +80,4 @@ public class MapComponent extends JComponent {
 		}
 	}
 	
->>>>>>> branch 'master' of https://github.com/JonathanBoutell/CSSE230navigationSystem.git
 }
