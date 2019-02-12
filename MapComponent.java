@@ -1,3 +1,4 @@
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -5,6 +6,7 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -14,12 +16,18 @@ public class MapComponent extends JComponent {
 	
 	Image trailImage;
 	Path drawPath;
+	Boolean mapMode;
 	ArrayList<MapNode> list;
+<<<<<<< HEAD
 	private boolean showsMap;
+=======
+	HashMap<String, MapNode> map;
+>>>>>>> branch 'master' of https://github.com/JonathanBoutell/CSSE230navigationSystem.git
 	
 	public MapComponent(){
 		showsMap = true;
 		this.drawPath = null;
+		this.mapMode = true;
 		try {
 			trailImage = ImageIO.read(getClass().getResource("trailsCropped.png"));
 		} catch (IOException e) {
@@ -34,11 +42,20 @@ public class MapComponent extends JComponent {
 	protected void paintComponent(Graphics g){
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
-		g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
+		if(mapMode) g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
 		if(list != null) drawNodes(g2);
+		if(list != null && map != null && !mapMode) drawEdges(g2);
 		if (drawPath != null) drawPath.draw(g2);
 	}
 
+	public void setMapMode(Boolean mode) {
+		this.mapMode = mode;
+	}
+	
+	public Boolean getMapMode() {
+		return this.mapMode;
+	}
+	
 	public void addNodeList(ArrayList<MapNode> list) {
 		this.list = list;
 	}
@@ -52,6 +69,7 @@ public class MapComponent extends JComponent {
 			node.draw(g);
 		}
 	}
+<<<<<<< HEAD
 
 	public void hideMap() {
 		this.showsMap = false;
@@ -64,4 +82,22 @@ public class MapComponent extends JComponent {
 	public boolean getShowsMap() {
 		return this.showsMap;
 	}
+=======
+	
+	private void drawEdges(Graphics g) {
+		MapNode endNode;
+		int i;
+		Graphics2D g2 = (Graphics2D) g;
+		g2.setStroke(new BasicStroke(Main.EDGE_THICKNESS));
+		for(MapNode node : list) {
+			i = 0;
+			for(MapEdge edge : node.edges) {
+				endNode = map.get(edge.getNextNode());
+				g2.setColor(edge.color);
+				g2.drawLine(node.getDrawingX() + i, node.getDrawingY(), endNode.getDrawingX() + i, endNode.getDrawingY());
+			}
+		}
+	}
+	
+>>>>>>> branch 'master' of https://github.com/JonathanBoutell/CSSE230navigationSystem.git
 }
