@@ -25,12 +25,20 @@ public class DirectionsFrame {
 		holder.setBackground(new Color(200,229,255));
 		
 		if (this.path != null) {
-			ArrayList<String> directions = this.path.generateDirections();
-			for (String string : directions) {
-				JLabel step = new JLabel(string);
-				step.setFont(new Font("SansSerif", Font.PLAIN, 30));
-				step.setAlignmentX(Component.CENTER_ALIGNMENT);
-				holder.add(step);
+			if(path.isEmpty()) {
+				JLabel noPath = new JLabel("No Path Found");
+				if(path.firstAid()) noPath = new JLabel("You are already at a first aid station.");
+				noPath.setFont(new Font("SansSerif", Font.PLAIN, 30));
+				noPath.setAlignmentX(Component.CENTER_ALIGNMENT);
+				holder.add(noPath);
+			}else {
+				ArrayList<String> directions = this.path.generateDirections();
+				for (String string : directions) {
+					JLabel step = new JLabel(string);
+					step.setFont(new Font("SansSerif", Font.PLAIN, 30));
+					step.setAlignmentX(Component.CENTER_ALIGNMENT);
+					holder.add(step);
+				}
 			}
 		} else {
 			JLabel noPath = new JLabel("No Path Found");
