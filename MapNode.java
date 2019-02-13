@@ -144,6 +144,10 @@ public class MapNode implements Comparable<MapNode>, Drawable{
 		return returnValue;
 	}
 
+	public Boolean equals(MapNode o) {
+		return o.name.compareTo(this.name) == 0;
+	}
+	
 	@Override
 	public int compareTo(MapNode o) {
 		return (int) ((int) this.findHeuristicDistance() - o.findHeuristicDistance());
