@@ -1,6 +1,5 @@
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.util.ArrayList;
 
@@ -20,7 +19,6 @@ public class DirectionsFrame {
 	public void display() {
 		
 		JFrame frame = new JFrame();
-		frame.setMinimumSize(new Dimension(400,150));
 		frame.setTitle("Directions");
 		JPanel holder = new JPanel();
 		holder.setLayout(new BoxLayout(holder, BoxLayout.Y_AXIS));

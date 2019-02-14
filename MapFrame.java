@@ -201,6 +201,7 @@ public class MapFrame {
 			mapComponent.setPath(path);
 			mapComponent.repaint();
 			new DirectionsFrame(path).display();
+
 			avgDiff.setText(diffs.get((int)path.getAverageDifficulty()));
 			maxDiff.setText(diffs.get(path.getHighestDifficulty()));
 			totalDist.setText(path.getTotalDistance()+" feet");

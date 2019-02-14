@@ -1,13 +1,16 @@
 import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
 public class MapComponent extends JComponent {
@@ -36,8 +39,8 @@ public class MapComponent extends JComponent {
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
 		if(mapMode) g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
-		if(list != null && map != null && !mapMode) drawEdges(g2);
 		if(list != null) drawNodes(g2);
+		if(list != null && map != null && !mapMode) drawEdges(g2);
 		if (drawPath != null) drawPath.draw(g2);
 	}
 
@@ -66,36 +69,18 @@ public class MapComponent extends JComponent {
 	
 	private void drawEdges(Graphics g) {
 		MapNode endNode;
-		double offsetX;
-		double offsetY;
-		double slope;
-		int offsetMult;
-		ArrayList<MapNode> visited;
+		int i;
 		Graphics2D g2 = (Graphics2D) g;
 		g2.setStroke(new BasicStroke(Main.EDGE_THICKNESS));
 		for(MapNode node : list) {
-			visited = new ArrayList<MapNode>();
+			i = 0;
 			for(MapEdge edge : node.edges) {
 				endNode = map.get(edge.getNextNode());
-				offsetMult = Main.EDGE_THICKNESS * countOccurances(visited, endNode);
-				visited.add(endNode);
-				slope = ((double)(endNode.getDrawingX() - node.getDrawingX()))/((double)(endNode.getDrawingY() - node.getDrawingY()));
-				offsetX = offsetMult * Math.cos(Math.atan(slope));
-				offsetY = offsetMult * -Math.sin(Math.atan(slope));
 				g2.setColor(edge.color);
-				g2.drawLine(node.getDrawingX() + (int)offsetX, node.getDrawingY() + (int)offsetY, 
-						endNode.getDrawingX() + (int)offsetX, endNode.getDrawingY() + (int)offsetY);
+				g2.drawLine(node.getDrawingX() + i, node.getDrawingY(), endNode.getDrawingX() + i, endNode.getDrawingY());
+				i += Main.EDGE_THICKNESS;
 			}
 		}
-	}
-	
-	private int countOccurances(Collection<MapNode> list, MapNode specified) {
-		int count = 0;
-		for(MapNode node : list) {
-			if(node.equals(specified))
-				count++;
-		}
-		return count;
 	}
 	
 }
