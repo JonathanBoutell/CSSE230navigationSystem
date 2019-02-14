@@ -1,16 +1,13 @@
 import java.awt.BasicStroke;
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
 public class MapComponent extends JComponent {
@@ -24,6 +21,8 @@ public class MapComponent extends JComponent {
 	public MapComponent(){
 		this.drawPath = null;
 		this.mapMode = true;
+		
+		//load the image and scale it appropriately
 		try {
 			trailImage = ImageIO.read(getClass().getResource("trailsCropped.png"));
 		} catch (IOException e) {
@@ -36,6 +35,7 @@ public class MapComponent extends JComponent {
 	
 	@Override
 	protected void paintComponent(Graphics g){
+		// draw all appropriate pictures, nodes, and edges
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
 		if(mapMode) g2.drawImage(trailImage, 0, 0, trailImage.getWidth(null),trailImage.getHeight(null),null);
@@ -76,6 +76,7 @@ public class MapComponent extends JComponent {
 		ArrayList<MapNode> visited;
 		Graphics2D g2 = (Graphics2D) g;
 		g2.setStroke(new BasicStroke(Main.EDGE_THICKNESS));
+		// draw edges, adding offsets to edges that share start and end nodes
 		for(MapNode node : list) {
 			visited = new ArrayList<MapNode>();
 			for(MapEdge edge : node.edges) {

@@ -64,6 +64,7 @@ public class MapFrame {
 		JButton getDirectionsButton = new JButton("Get Directions");
 		getDirectionsButton.addActionListener(new DirectionsListener(startTextField,endTextField,distanceOptions,difficultyOptions,firstAidSelect,skiLiftSelect,avgDiff,maxDiff,totalDist));
 		JButton toggleBackground = new JButton("Toggle Map");
+		//listener to toggle map view
 		toggleBackground.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -76,6 +77,7 @@ public class MapFrame {
 			}
 		});
 		
+		//listener to find nearest node to a click and set the start/end node accordingly
 		mapComponent.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -103,6 +105,7 @@ public class MapFrame {
 			public void mouseReleased(MouseEvent e) {}
 		});
 		
+		//change background color
 		holder.setBackground(new Color(200,229,255));
 		selectionPanel.setBackground(new Color(200,229,255));
 		firstAidSelect.setBackground(new Color(200,229,255));
@@ -169,11 +172,14 @@ public class MapFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
+			// create map to relate difficulty numbers to names
 			HashMap<Integer, String> diffs = new HashMap<Integer,String>();
 			diffs.put(1, "Green");
 			diffs.put(2, "Blue");
 			diffs.put(3, "Black");
 			diffs.put(4, "Double Black");
+			
+			// find values to give to pathfinder algorithm
 			String start = (String) startTextField.getSelectedItem();
 			String end = (String) endTextField.getSelectedItem();
 			if (firstAidSelect.isSelected()) {
@@ -182,23 +188,15 @@ public class MapFrame {
 				boolean allowSkiLift = !skiLiftSelect.isSelected();
 				boolean findMaxDistance = (distanceOptions.getSelectedItem().equals("Minimize"))?false:true;
 				double maxDifficulty = 0;
-				switch (difficultyOptions.getSelectedItem().toString()) {
-				case "Green":
-					maxDifficulty = 1;
-					break;
-				case "Blue":
-					maxDifficulty = 2;
-					break;
-				case "Black":
-					maxDifficulty = 3;
-					break;
-				case "Double Black":
-					maxDifficulty = 4;
-				default:
-					break;
+				for (Integer d : diffs.keySet()) {
+					if (diffs.get(d).equals(difficultyOptions.getSelectedItem().toString())) {
+						 maxDifficulty = (double) d;
+					}
 				}
 				path = pathFinder.runAStar(findMaxDistance, allowSkiLift, start, end, maxDifficulty);
 			}
+			
+			// draw the path on map and create directions frame
 			mapComponent.setPath(path);
 			mapComponent.repaint();
 			new DirectionsFrame(path).display();

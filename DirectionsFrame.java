@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.util.ArrayList;
 
@@ -18,12 +19,15 @@ public class DirectionsFrame {
 
 	public void display() {
 		
+		// set up frame and panels
 		JFrame frame = new JFrame();
 		frame.setTitle("Directions");
+		frame.setMinimumSize(new Dimension(400,150));
 		JPanel holder = new JPanel();
 		holder.setLayout(new BoxLayout(holder, BoxLayout.Y_AXIS));
 		holder.setBackground(new Color(200,229,255));
 		
+		// create all the text
 		if (this.path != null) {
 			if(path.isEmpty()) {
 				JLabel noPath = new JLabel("No Path Found");
@@ -47,6 +51,7 @@ public class DirectionsFrame {
 			holder.add(noPath);
 		}
 		
+		// add panel to frame and make it visible
 		frame.add(holder);
 		frame.pack();
 		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
