@@ -32,11 +32,11 @@ public class MapNode implements Comparable<MapNode>, Drawable{
 	
 	private void draw(Graphics g, Color c) {
 		g.setColor(c);
-		g.fillOval((int)getDrawingX() - Main.NODE_DIAMETER / 2, (int)getDrawingY() - Main.NODE_DIAMETER / 2,
+		g.fillOval(getDrawingX() - Main.NODE_DIAMETER / 2, getDrawingY() - Main.NODE_DIAMETER / 2,
 				Main.NODE_DIAMETER, Main.NODE_DIAMETER);
 		if(hasFirstAid) {
 			g.setColor(Color.RED);
-			g.fillOval((int)getDrawingX() - Main.NODE_DIAMETER / 4, (int)getDrawingY() - Main.NODE_DIAMETER / 4,
+			g.fillOval(getDrawingX() - Main.NODE_DIAMETER / 4, getDrawingY() - Main.NODE_DIAMETER / 4,
 					Main.NODE_DIAMETER / 2, Main.NODE_DIAMETER / 2);
 		}
 	}
