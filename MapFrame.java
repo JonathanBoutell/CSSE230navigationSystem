@@ -33,6 +33,7 @@ public class MapFrame {
 		JPanel statisticsPanel = new JPanel();
 		statisticsPanel.setLayout(new BoxLayout(statisticsPanel, BoxLayout.Y_AXIS));
 		
+		//initialize the set of nodes
 		ArrayList<String> temp = new ArrayList<String>();
 		for (String key : pathFinder.getNodes().keySet()) {
 			temp.add(key);
