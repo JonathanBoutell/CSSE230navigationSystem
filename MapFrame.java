@@ -203,7 +203,7 @@ public class MapFrame {
 			new DirectionsFrame(path).display();
 			avgDiff.setText(diffs.get((int)path.getAverageDifficulty()));
 			maxDiff.setText(diffs.get(path.getHighestDifficulty()));
-			totalDist.setText(path.getTotalDistance()+"");
+			totalDist.setText(path.getTotalDistance()+" feet");
 		}
 	}
 }

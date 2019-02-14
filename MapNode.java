@@ -64,7 +64,8 @@ public class MapNode implements Comparable<MapNode>, Drawable{
 	}
 	
 	public double distanceBetween(MapNode destination) {
-		return Math.sqrt((this.longitude - destination.longitude)*(this.longitude - destination.longitude) + (this.latitude - destination.latitude)*(this.latitude - destination.latitude));
+		return Math.sqrt(Main.LONGITUDE_TO_FEET*Main.LONGITUDE_TO_FEET*(this.longitude - destination.longitude)*(this.longitude - destination.longitude) 
+				+ Main.LATITUDE_TO_FEET*Main.LATITUDE_TO_FEET*(this.latitude - destination.latitude)*(this.latitude - destination.latitude));
 	}
 
 	public void setName(String name) {
