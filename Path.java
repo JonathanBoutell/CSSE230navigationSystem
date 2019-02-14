@@ -13,6 +13,7 @@ public class Path implements Drawable {
 	private MapNode startNode;
 	private boolean firstAid;
 
+	//comment
 	public Path(HashMap<MapNode, MapEdge> map, HashMap<String, MapNode> nodes, MapNode startNode, boolean firstAid) {
 		this.map = map;
 		this.nodes = nodes;
