@@ -7,7 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -28,6 +30,8 @@ public class MapFrame {
 		frame.setTitle("Navigation System");
 		JPanel holder = new JPanel(new BorderLayout());
 		JPanel selectionPanel = new JPanel(new GridLayout(0,6));
+		JPanel statisticsPanel = new JPanel();
+		statisticsPanel.setLayout(new BoxLayout(statisticsPanel, BoxLayout.Y_AXIS));
 		
 		ArrayList<String> temp = new ArrayList<String>();
 		for (String key : pathFinder.getNodes().keySet()) {
@@ -36,7 +40,14 @@ public class MapFrame {
 		temp.add("");
 		Object[] mapNodes = temp.toArray();
 		
-		//initialize all buttons
+		//initialize all buttons, labels, etc.
+		JLabel avgDiffLabel = new JLabel("<html><br/>Average Difficulty: <br/><br/></html>");
+		JLabel maxDiffLabel = new JLabel("<html><br/>Maximum Difficulty: <br/><br/></html>");
+		JLabel totalDistLabel = new JLabel("<html><br/>Total Distance to <br/>Destination: <br/><br/></html>");
+		JLabel avgDiff = new JLabel("<html>N/A<br/><br/></html>");
+		JLabel maxDiff = new JLabel("<html>N/A<br/><br/></html>");
+		JLabel totalDist = new JLabel("<html>N/A<br/><br/></html>");
+		
 		final JComboBox startTextField = new JComboBox(mapNodes);
 		startTextField.setSelectedItem("");
 		final JComboBox endTextField = new JComboBox(mapNodes);
@@ -50,7 +61,7 @@ public class MapFrame {
 		JCheckBox firstAidSelect = new JCheckBox("Find Nearest First Aid Station");
 		JCheckBox skiLiftSelect = new JCheckBox("Do Not Allow Ski Lifts");
 		JButton getDirectionsButton = new JButton("Get Directions");
-		getDirectionsButton.addActionListener(new DirectionsListener(startTextField,endTextField,distanceOptions,difficultyOptions,firstAidSelect,skiLiftSelect));
+		getDirectionsButton.addActionListener(new DirectionsListener(startTextField,endTextField,distanceOptions,difficultyOptions,firstAidSelect,skiLiftSelect,avgDiff,maxDiff,totalDist));
 		JButton toggleBackground = new JButton("Toggle Map");
 		toggleBackground.addActionListener(new ActionListener(){
 			@Override
@@ -95,6 +106,7 @@ public class MapFrame {
 		selectionPanel.setBackground(new Color(200,229,255));
 		firstAidSelect.setBackground(new Color(200,229,255));
 		skiLiftSelect.setBackground(new Color(200,229,255));
+		statisticsPanel.setBackground(new Color(200,229,255));
 		
 		//add buttons and labels
 		selectionPanel.add(new JLabel("Start Point"));
@@ -111,36 +123,56 @@ public class MapFrame {
 		selectionPanel.add(skiLiftSelect);
 		selectionPanel.add(getDirectionsButton);
 		
+		
+		statisticsPanel.add(maxDiffLabel);
+		statisticsPanel.add(maxDiff);
+		statisticsPanel.add(avgDiffLabel);
+		statisticsPanel.add(avgDiff);
+		statisticsPanel.add(totalDistLabel);
+		statisticsPanel.add(totalDist);
+		
 		//add everything to the frame and make it visible
 		frame.add(holder);
 		holder.add(mapComponent,BorderLayout.CENTER);
 		mapComponent.repaint();
 		holder.add(selectionPanel, BorderLayout.NORTH);
+		holder.add(statisticsPanel, BorderLayout.EAST);
 		frame.setSize(Main.MAP_WIDTH, Main.MAP_HEIGHT);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}
 	private class DirectionsListener implements ActionListener {
-		JComboBox startTextField;
-		JComboBox endTextField;
-		JComboBox distanceOptions;
-		JComboBox difficultyOptions;
-		JCheckBox firstAidSelect;
-		JCheckBox skiLiftSelect;
-		Path path;
+		private JComboBox startTextField;
+		private JComboBox endTextField;
+		private JComboBox distanceOptions;
+		private JComboBox difficultyOptions;
+		private JCheckBox firstAidSelect;
+		private JCheckBox skiLiftSelect;
+		private Path path;
+		private JLabel maxDiff;
+		private JLabel avgDiff;
+		private JLabel totalDist;
 		
 		public DirectionsListener(JComboBox startTextField, JComboBox endTextField, JComboBox distanceOptions,
-				JComboBox difficultyOptions, JCheckBox firstAidSelect, JCheckBox skiLiftSelect) {
+				JComboBox difficultyOptions, JCheckBox firstAidSelect, JCheckBox skiLiftSelect, JLabel avgDiff, JLabel maxDiff, JLabel totalDist) {
 			this.startTextField = startTextField;
 			this.endTextField = endTextField;
 			this.distanceOptions = distanceOptions;
 			this.difficultyOptions = difficultyOptions;
 			this.firstAidSelect = firstAidSelect;
 			this.skiLiftSelect = skiLiftSelect;
+			this.maxDiff = maxDiff;
+			this.avgDiff = avgDiff;
+			this.totalDist = totalDist;
 		}
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
+			HashMap<Integer, String> diffs = new HashMap<Integer,String>();
+			diffs.put(1, "Green");
+			diffs.put(2, "Blue");
+			diffs.put(3, "Black");
+			diffs.put(4, "Double Black");
 			String start = (String) startTextField.getSelectedItem();
 			String end = (String) endTextField.getSelectedItem();
 			if (firstAidSelect.isSelected()) {
@@ -169,6 +201,10 @@ public class MapFrame {
 			mapComponent.setPath(path);
 			mapComponent.repaint();
 			new DirectionsFrame(path).display();
+
+			avgDiff.setText(diffs.get((int)path.getAverageDifficulty()));
+			maxDiff.setText(diffs.get(path.getHighestDifficulty()));
+			totalDist.setText(path.getTotalDistance()+" feet");
 		}
 	}
 }
