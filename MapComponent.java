@@ -69,18 +69,36 @@ public class MapComponent extends JComponent {
 	
 	private void drawEdges(Graphics g) {
 		MapNode endNode;
-		int i;
+		double offsetX;
+		double offsetY;
+		double slope;
+		int offsetMult;
+		ArrayList<MapNode> visited;
 		Graphics2D g2 = (Graphics2D) g;
 		g2.setStroke(new BasicStroke(Main.EDGE_THICKNESS));
 		for(MapNode node : list) {
-			i = 0;
+			visited = new ArrayList<MapNode>();
 			for(MapEdge edge : node.edges) {
 				endNode = map.get(edge.getNextNode());
+				offsetMult = Main.EDGE_THICKNESS * countOccurances(visited, endNode);
+				visited.add(endNode);
+				slope = ((double)(endNode.getDrawingX() - node.getDrawingX()))/((double)(endNode.getDrawingY() - node.getDrawingY()));
+				offsetX = offsetMult * Math.cos(Math.atan(slope));
+				offsetY = offsetMult * -Math.sin(Math.atan(slope));
 				g2.setColor(edge.color);
-				g2.drawLine(node.getDrawingX() + i, node.getDrawingY(), endNode.getDrawingX() + i, endNode.getDrawingY());
-				i += Main.EDGE_THICKNESS;
+				g2.drawLine(node.getDrawingX() + (int)offsetX, node.getDrawingY() + (int)offsetY, 
+						endNode.getDrawingX() + (int)offsetX, endNode.getDrawingY() + (int)offsetY);
 			}
 		}
+	}
+	
+	private int countOccurances(Collection<MapNode> list, MapNode specified) {
+		int count = 0;
+		for(MapNode node : list) {
+			if(node.equals(specified))
+				count++;
+		}
+		return count;
 	}
 	
 }
